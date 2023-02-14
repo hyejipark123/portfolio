@@ -1,0 +1,732 @@
+%!Adobe-FontList 1.19
+%Locale:0x412
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\SpoqaHanSansNeo\LICENSE
+FileModTime:1622999852
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\SpoqaHanSansNeo\SpoqaHanSansNeo-Bold.eot
+FileModTime:1622999852
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SpoqaHanSansNeo-Bold
+FamilyName:Spoqa Han Sans Neo
+StyleName:Bold
+FullName:Spoqa Han Sans Neo Bold
+MenuName:Spoqa Han Sans Neo Bold
+StyleBits:2
+FamilyNameNative:Spoqa Han Sans Neo
+StyleNameNative:Bold
+FullNameNative:Spoqa Han Sans Neo Bold
+WritingScript:Korean
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\SpoqaHanSansNeo\SpoqaHanSansNeo-Bold.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:499900
+FileModTime:1622999852
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Spoqa Han Sans Neo Bold
+NameArray:0,Win,1,Spoqa Han Sans Neo Bold
+NameArray:0,Win,16,Spoqa Han Sans Neo
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\SpoqaHanSansNeo\SpoqaHanSansNeo-Bold.woff
+FileModTime:1622999852
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\SpoqaHanSansNeo\SpoqaHanSansNeo-Bold.woff2
+FileModTime:1622999852
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\SpoqaHanSansNeo\SpoqaHanSansNeo-Light.eot
+FileModTime:1622999852
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SpoqaHanSansNeo-Light
+FamilyName:Spoqa Han Sans Neo
+StyleName:Light
+FullName:Spoqa Han Sans Neo Light
+MenuName:Spoqa Han Sans Neo Light
+StyleBits:0
+FamilyNameNative:Spoqa Han Sans Neo
+StyleNameNative:Light
+FullNameNative:Spoqa Han Sans Neo Light
+WritingScript:Korean
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\SpoqaHanSansNeo\SpoqaHanSansNeo-Light.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:516652
+FileModTime:1622999852
+WeightClass:300
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Spoqa Han Sans Neo Light
+NameArray:0,Win,1,Spoqa Han Sans Neo Light
+NameArray:0,Win,16,Spoqa Han Sans Neo
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\SpoqaHanSansNeo\SpoqaHanSansNeo-Light.woff
+FileModTime:1622999852
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\SpoqaHanSansNeo\SpoqaHanSansNeo-Light.woff2
+FileModTime:1622999852
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\SpoqaHanSansNeo\SpoqaHanSansNeo-Medium.eot
+FileModTime:1622999852
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SpoqaHanSansNeo-Medium
+FamilyName:Spoqa Han Sans Neo
+StyleName:Medium
+FullName:Spoqa Han Sans Neo Medium
+MenuName:Spoqa Han Sans Neo Medium
+StyleBits:0
+FamilyNameNative:Spoqa Han Sans Neo
+StyleNameNative:Medium
+FullNameNative:Spoqa Han Sans Neo Medium
+WritingScript:Korean
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\SpoqaHanSansNeo\SpoqaHanSansNeo-Medium.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:503096
+FileModTime:1622999852
+WeightClass:500
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Spoqa Han Sans Neo Medium
+NameArray:0,Win,1,Spoqa Han Sans Neo Medium
+NameArray:0,Win,16,Spoqa Han Sans Neo
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\SpoqaHanSansNeo\SpoqaHanSansNeo-Medium.woff
+FileModTime:1622999852
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\SpoqaHanSansNeo\SpoqaHanSansNeo-Medium.woff2
+FileModTime:1622999852
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\SpoqaHanSansNeo\SpoqaHanSansNeo-Regular.eot
+FileModTime:1622999852
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SpoqaHanSansNeo-Regular
+FamilyName:Spoqa Han Sans Neo
+StyleName:Regular
+FullName:Spoqa Han Sans Neo Regular
+MenuName:Spoqa Han Sans Neo
+StyleBits:2
+FamilyNameNative:Spoqa Han Sans Neo
+StyleNameNative:Regular
+FullNameNative:Spoqa Han Sans Neo Regular
+WritingScript:Korean
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\SpoqaHanSansNeo\SpoqaHanSansNeo-Regular.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:511596
+FileModTime:1622999852
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Spoqa Han Sans Neo Regular
+NameArray:0,Win,1,Spoqa Han Sans Neo
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\SpoqaHanSansNeo\SpoqaHanSansNeo-Regular.woff
+FileModTime:1622999852
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\SpoqaHanSansNeo\SpoqaHanSansNeo-Regular.woff2
+FileModTime:1622999852
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\SpoqaHanSansNeo\SpoqaHanSansNeo-Thin.eot
+FileModTime:1622999852
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SpoqaHanSansNeo-Thin
+FamilyName:Spoqa Han Sans Neo
+StyleName:Thin
+FullName:Spoqa Han Sans Neo Thin
+MenuName:Spoqa Han Sans Neo Thin
+StyleBits:0
+FamilyNameNative:Spoqa Han Sans Neo
+StyleNameNative:Thin
+FullNameNative:Spoqa Han Sans Neo Thin
+WritingScript:Korean
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\SpoqaHanSansNeo\SpoqaHanSansNeo-Thin.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:525564
+FileModTime:1622999852
+WeightClass:100
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Spoqa Han Sans Neo Thin
+NameArray:0,Win,1,Spoqa Han Sans Neo Thin
+NameArray:0,Win,16,Spoqa Han Sans Neo
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\SpoqaHanSansNeo\SpoqaHanSansNeo-Thin.woff
+FileModTime:1622999852
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\SpoqaHanSansNeo\SpoqaHanSansNeo-Thin.woff2
+FileModTime:1622999852
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Outfit-Black
+FamilyName:Outfit
+StyleName:Black
+FullName:Outfit Black
+MenuName:Outfit Black
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\Outfit\Outfit-Black.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:36392
+FileModTime:1632744000
+WeightClass:900
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Outfit Black
+NameArray:0,Win,16,Outfit
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Outfit-Bold
+FamilyName:Outfit
+StyleName:Bold
+FullName:Outfit Bold
+MenuName:Outfit
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\Outfit\Outfit-Bold.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:36320
+FileModTime:1632744000
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Outfit
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Outfit-ExtraBold
+FamilyName:Outfit
+StyleName:ExtraBold
+FullName:Outfit ExtraBold
+MenuName:Outfit ExtraBold
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\Outfit\Outfit-ExtraBold.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:36324
+FileModTime:1632744000
+WeightClass:800
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Outfit ExtraBold
+NameArray:0,Win,16,Outfit
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Outfit-ExtraLight
+FamilyName:Outfit
+StyleName:ExtraLight
+FullName:Outfit ExtraLight
+MenuName:Outfit ExtraLight
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\Outfit\Outfit-ExtraLight.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:36388
+FileModTime:1632744000
+WeightClass:250
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Outfit ExtraLight
+NameArray:0,Win,16,Outfit
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Outfit-Light
+FamilyName:Outfit
+StyleName:Light
+FullName:Outfit Light
+MenuName:Outfit Light
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\Outfit\Outfit-Light.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:36356
+FileModTime:1632744000
+WeightClass:300
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Outfit Light
+NameArray:0,Win,16,Outfit
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Outfit-Medium
+FamilyName:Outfit
+StyleName:Medium
+FullName:Outfit Medium
+MenuName:Outfit Medium
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\Outfit\Outfit-Medium.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:36296
+FileModTime:1632744000
+WeightClass:500
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Outfit Medium
+NameArray:0,Win,16,Outfit
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Outfit-Regular
+FamilyName:Outfit
+StyleName:Regular
+FullName:Outfit Regular
+MenuName:Outfit
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\Outfit\Outfit-Regular.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:36328
+FileModTime:1632744000
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Outfit
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Outfit-SemiBold
+FamilyName:Outfit
+StyleName:SemiBold
+FullName:Outfit SemiBold
+MenuName:Outfit SemiBold
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\Outfit\Outfit-SemiBold.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:36436
+FileModTime:1632744000
+WeightClass:600
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Outfit SemiBold
+NameArray:0,Win,16,Outfit
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Outfit-Thin
+FamilyName:Outfit
+StyleName:Thin
+FullName:Outfit Thin
+MenuName:Outfit Thin
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\Outfit\Outfit-Thin.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:36256
+FileModTime:1632744000
+WeightClass:250
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Outfit Thin
+NameArray:0,Win,16,Outfit
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MonumentExtended-Regular
+FamilyName:Monument Extended
+StyleName:Regular
+FullName:Monument Extended Regular
+MenuName:Monument Extended
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\MonumentExtended\MonumentExtended-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:34380
+FileModTime:1532997098
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Monument Extended Regular
+NameArray:0,Win,1,Monument Extended
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MonumentExtended-Ultrabold
+FamilyName:Monument Extended
+StyleName:Ultrabold
+FullName:Monument Extended Ultrabold
+MenuName:Monument Extended Ultrabold
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\MonumentExtended\MonumentExtended-Ultrabold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:33528
+FileModTime:1532997100
+WeightClass:800
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Monument Extended Ultrabold
+NameArray:0,Win,1,Monument Extended Ultrabold
+NameArray:0,Win,16,Monument Extended
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Inter-Black
+FamilyName:Inter
+StyleName:Black
+FullName:Inter Black
+MenuName:Inter Black
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\Inter\Inter-Black.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:316372
+FileModTime:1672806457
+WeightClass:900
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Inter Black
+NameArray:0,Win,16,Inter
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Inter-Bold
+FamilyName:Inter
+StyleName:Bold
+FullName:Inter Bold
+MenuName:Inter
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\Inter\Inter-Bold.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:316100
+FileModTime:1672806458
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Inter
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Inter-ExtraBold
+FamilyName:Inter
+StyleName:ExtraBold
+FullName:Inter ExtraBold
+MenuName:Inter ExtraBold
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\Inter\Inter-ExtraBold.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:316716
+FileModTime:1672806458
+WeightClass:800
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Inter ExtraBold
+NameArray:0,Win,16,Inter
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Inter-ExtraLight
+FamilyName:Inter
+StyleName:ExtraLight
+FullName:Inter ExtraLight
+MenuName:Inter ExtraLight
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\Inter\Inter-ExtraLight.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:310808
+FileModTime:1672806458
+WeightClass:250
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Inter ExtraLight
+NameArray:0,Win,16,Inter
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Inter-Light
+FamilyName:Inter
+StyleName:Light
+FullName:Inter Light
+MenuName:Inter Light
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\Inter\Inter-Light.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:310420
+FileModTime:1672806458
+WeightClass:300
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Inter Light
+NameArray:0,Win,16,Inter
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Inter-Medium
+FamilyName:Inter
+StyleName:Medium
+FullName:Inter Medium
+MenuName:Inter Medium
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\Inter\Inter-Medium.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:314712
+FileModTime:1672806458
+WeightClass:500
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Inter Medium
+NameArray:0,Win,16,Inter
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Inter-Regular
+FamilyName:Inter
+StyleName:Regular
+FullName:Inter Regular
+MenuName:Inter
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\Inter\Inter-Regular.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:309828
+FileModTime:1672806458
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Inter
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Inter-SemiBold
+FamilyName:Inter
+StyleName:SemiBold
+FullName:Inter SemiBold
+MenuName:Inter SemiBold
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\Inter\Inter-SemiBold.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:315756
+FileModTime:1672806458
+WeightClass:600
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Inter SemiBold
+NameArray:0,Win,16,Inter
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Inter-Thin
+FamilyName:Inter
+StyleName:Thin
+FullName:Inter Thin
+MenuName:Inter Thin
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\Inter\Inter-Thin.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:310516
+FileModTime:1672806458
+WeightClass:250
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Inter Thin
+NameArray:0,Win,16,Inter
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:GildaDisplay-Regular
+FamilyName:Gilda Display
+StyleName:Regular
+FullName:Gilda Display
+MenuName:Gilda Display
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\ChaeRi\Desktop\2022\Font\Gilda\GildaDisplay-Regular.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:33592
+FileModTime:1351609200
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Gilda Display
+%EndFont
+
