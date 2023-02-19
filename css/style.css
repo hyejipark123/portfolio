@@ -403,10 +403,10 @@ body { width:100%; height:100%;transition: background-color 1s ease; background-
 	.row-contents .row-item .m-r-txt { padding: 2rem 1rem 1rem 0;  }
 	.row-sidebar .row-controls p { margin-bottom: 4rem; font-size: 7.46667vw;}
 	.pl-pr-pt,.padding-all { padding: 0; }
-	.item-txt { font-size: 13px; width: 100%; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; }
-	.row-item > a.item-box h3 { font-size: 24px; }
+	.item-txt { margin-top: 2rem; font-size: 13px; width: 100%; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; }
+	.row-item > a.item-box h3 { font-size: 20px; }
 	.row-item > a.item-box h3 .no { font-size: 12px; }
-	.txt-wrap img.arrow { width: 14px; }
+	.txt-wrap img.arrow { width: 12px; }
 	.d-lbox .title-box p { font-size: 7.46667vw; }
 	#design-wrap .design-slide { border-bottom: 0;}
 	#design-wrap .design-slide .cont-wrap { display: revert; }
