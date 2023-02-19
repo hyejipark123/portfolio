@@ -154,16 +154,13 @@ body { width:100%; height:100%; transition: background-color 1s ease; background
 
 /* 소마요가 서브페이지 */
 .somayoga {}
-.somayoga .sub-content { padding: 5rem 0 10rem; }
 .somayoga .overview .main-project { color: #1a1a1a; }
 .somayoga .sub-old-ds{}
-.somayoga .sub-old-ds .sub-old-wrap {}
-.somayoga .sub-old-ds .sub-old-wrap .old-inner { padding-bottom:4rem; margin: 0 calc(var(--gutter-size) * 2); align-items: center; justify-content: space-between;}
-.somayoga .sub-old-ds .sub-old-wrap .old-inner:last-child { padding-bottom: 0; }
-.soma_icon { width: 30px; }
+.somayoga .sub-old-ds .old-inner { padding-bottom:4rem; margin: 0 calc(var(--gutter-size) * 2); align-items: center; justify-content: space-between;}
+.somayoga .sub-old-ds .old-inner:last-child { padding-bottom: 0; }
+.somayoga .sub-old-ds .old-inner .old-content .soma_icon { width: 30px; }
 .old-img { width: 65%; }
 .old-text { width: 30%; }
-.somayoga .sub-old-ds .old-content { }
 .somayoga .sub-old-ds .old-content .en_txt { font-family: 'Outfit',sans-serif; font-weight: bold; font-size: 3rem; padding-bottom: 1.4rem; }
 .somayoga .sub-old-ds .old-content .ko_txt { font-size: 18px; line-height: 1.4rem;  }
 .somayoga .sub-ds-conc { background: #42705c; color: #fff; }
@@ -184,13 +181,10 @@ body { width:100%; height:100%; transition: background-color 1s ease; background
 .somayoga .sub-color .color-img { width: 40%; }
 .somayoga .sub-color .color-img img {height: 800px; object-fit: cover; width: 100%;}
 .somayoga .sub-main { background: url('../img/sub_soma_02.jpg') 0 0 / cover no-repeat; width: 100%; }
-.sub-line-text-w {margin: 0 calc(var(--gutter-size) * 2) 8rem;}
-.sub-line-text-w.white .sub-line-text { border-bottom: 4px solid #fff;}
-.sub-line-text {justify-content: space-between; border-bottom: 4px solid #1a1a1a;}
-.sub-line-text-w.white .sub-line-text h4 { color:#fff; }
-.sub-line-text h4 { font-family: 'Outfit',sans-serif; font-size: 80px;}
-.sub-line-text-w > p { margin-top: 2rem; }
-.sub-line-sub { font-size: 20px; line-height: 2rem; }
+.sub-text-wrap { margin: 0 calc(var(--gutter-size) * 2) 8rem; }
+.sub-text-wrap.white .sub-tit h4 { color:#fff; }
+.sub-tit h4 { font-family: 'Outfit',sans-serif; font-size: 80px;}
+.sub-text-cont { font-size: 20px; line-height: 2rem; margin-top: 2rem;  }
 
 
 /* 스웨트 서브페이지 */
