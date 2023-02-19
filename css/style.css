@@ -154,6 +154,7 @@ body { width:100%; height:100%; transition: background-color 1s ease; background
 
 /* 소마요가 서브페이지 */
 .somayoga {}
+.somayoga .sub-content { position: relative; }
 .somayoga .overview .main-project { color: #1a1a1a; }
 .somayoga .sub-old-ds{}
 .somayoga .sub-old-ds .old-inner { padding-bottom:4rem; margin: 0 calc(var(--gutter-size) * 2); align-items: center; justify-content: space-between;}
@@ -182,9 +183,10 @@ body { width:100%; height:100%; transition: background-color 1s ease; background
 .somayoga .sub-color .color-img img {height: 800px; object-fit: cover; width: 100%;}
 .somayoga .sub-main { background: url('../img/sub_soma_02.jpg') 0 0 / cover no-repeat; width: 100%; }
 .sub-text-wrap { margin: 0 calc(var(--gutter-size) * 2) 8rem; }
-.sub-text-wrap.white .sub-tit h4 { color:#fff; }
+.sub-text-wrap.white { color:#fff; }
 .sub-tit h4 { font-family: 'Outfit',sans-serif; font-size: 80px;}
 .sub-text-cont { font-size: 20px; line-height: 2rem; margin-top: 2rem;  }
+.sub-img-txt { position: absolute; top:5%; }
 
 
 /* 스웨트 서브페이지 */
