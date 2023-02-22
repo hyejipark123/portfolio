@@ -480,8 +480,10 @@ body { width:100%; height:100%; transition: background-color 1s ease; background
 	.pro-item { width: 49%; }
 
 	/* 슬라이드메뉴 */
+	.nav { padding: 5rem 3rem 0; }
+	.nav ul { margin-bottom: 4rem; }
 	.nav .contact { display: unset; }
-	.nav ul li a { font-size: 4rem; }
+	.nav ul li a { font-size: 3.5rem; }
 	.nav .contact .cont-list p { font-size: 16px; margin-bottom: 1.4rem; }
 
 	/* footer */
