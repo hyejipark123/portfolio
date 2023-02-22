@@ -162,7 +162,7 @@ body { width:100%; height:100%; transition: background-color 1s ease; background
 .somayoga .sub-old-ds .old-inner .old-content .soma_icon { width: 30px; }
 .old-img { width: 65%; }
 .old-text { width: 30%; }
-.somayoga .sub-old-ds .old-content .en_txt { font-family: 'Outfit',sans-serif; font-weight: bold; font-size: 3rem; padding-bottom: 1.4rem; }
+.somayoga .sub-old-ds .old-content .en_txt { font-family: 'Outfit',sans-serif; font-weight: bold; font-size: 2rem; padding-bottom: 1.4rem; }
 .somayoga .sub-old-ds .old-content .ko_txt { font-size: 18px; line-height: 1.4rem;  }
 .somayoga .sub-ds-conc { background: #42705c; color: #fff; }
 .somayoga .sub-ds-conc .sub-project-txt { text-align: center; margin-top: 2rem; }

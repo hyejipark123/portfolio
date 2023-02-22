@@ -24,7 +24,6 @@ $(window).scroll(function(event){
 });
 
 
-
 $(document).ready(function(){
   $('.gnb-btn').on('click', function(){
     if(!$(this).hasClass('on')) {
@@ -37,7 +36,6 @@ $(document).ready(function(){
   });
   
 });
-
 
 /*$(document).ready(function(){
   //$('classNAME or element').hover(A, B);
@@ -62,30 +60,23 @@ $(function(){
   }).filter(':eq(0)').click();
 });
 
-/* 마지막 섹션_배경색 변경 */
+/* main 마지막 섹션_배경색 변경 */
 $(window).scroll(function() {
-  
-    // selectors
     var $window = $(window),
         $body = $('body'),
         $panel = $('.bgcolor');
-    
-    // Change 33% earlier than scroll position so colour is there when you arrive.
+  
     var scroll = $window.scrollTop() + ($window.height() / 3);
    
     $panel.each(function () {
       var $this = $(this);
       
       if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
-            
-        // Remove all classes on body with color-
         $body.removeClass(function (index, css) {
           return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
         });
-       
-        // Add class of currently active div
-        $body.addClass('color-' + $(this).data('color'));
-        
+
+        $body.addClass('color-' + $(this).data('color'));        
       } 
     });    
     
