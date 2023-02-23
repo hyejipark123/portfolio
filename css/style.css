@@ -156,7 +156,7 @@ body { width:100%; height:100%; transition: background-color 1s ease; background
 .somayoga {}
 .somayoga .sub-content { position: relative; }
 .somayoga .sub-text-wrap { margin: 0 calc(var(--gutter-size) * 2) 2rem; }
-.somayoga .sub-text-wrap .sub-tit { font-size: 60px; }
+.somayoga .sub-text-wrap .sub-tit { font-size: 2rem; }
 .somayoga .overview .main-project { color: #1a1a1a; }
 .somayoga .sub-old-ds{}
 .somayoga .sub-old-ds .old-inner { padding-bottom:4rem; margin: 0 calc(var(--gutter-size) * 2); align-items: center; justify-content: space-between;}
@@ -445,6 +445,7 @@ body { width:100%; height:100%; transition: background-color 1s ease; background
 	.overview .ov-txt h4 { font-size: 2rem !important; }
 	.overview .ov-txt { display: block; }
 	.overview .main-project { width: 100% !important; margin-top: 2rem !important; }
+	.overview .ov-txt .pro-overtxt p { word-break: keep-all; }
 
 	.event_Design .sub_text,
 	.card_news .sub_text,
