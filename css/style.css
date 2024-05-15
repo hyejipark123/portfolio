@@ -313,8 +313,8 @@ body { width:100%; height:100%; transition: background-color 1s ease; background
 .about_wrap .about_info .info_wrap > div { flex: 1; }
 .about_wrap .about_info .info_wrap .info_txt .info_tit { font-size: 4vw; padding-bottom: 1.4rem; }
 .info_edu { margin-bottom: 2rem; }
-.about_wrap .about_info .info_wrap .info_txt .date { margin-right: 2rem; display: inline-block; min-width: 40px;}
-.about_wrap .about_info .info_wrap .info_txt p { margin-bottom: 1rem; font-size: 1.2rem; }
+.about_wrap .about_info .info_wrap .info_txt .date { margin-right: 2rem; display: inline-block; min-width: 45px;}
+.about_wrap .about_info .info_wrap .info_txt p { margin-bottom: 1rem; font-size: 1.2rem; min-width: 220px;}
 .gray_txt { color: #bbb; font-size: .8rem; margin-left: .5rem; }
 .info_exp.info_txt .date { min-width: 140px !important; }
 .info_exp.info_txt .sub_info { color:#bbb; }
