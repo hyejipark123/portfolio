@@ -27,7 +27,7 @@ em{font-style:normal;}
 
 a:focus,input:focus,button:focus,textarea:focus { outline: none;}
 
-.dot { top:0; left:0; z-index:5; position: absolute; width: 40px; height: 40px; border-radius: 50%; background: #fff; transition: transform 0.2s; mix-blend-mode: difference; transform: translate(-50%, -50%); pointer-events: none; }
+.dot { top:0; left:0; z-index:99; position: absolute; width: 40px; height: 40px; border-radius: 50%; background: #fff; transition: transform 0.2s; mix-blend-mode: difference; transform: translate(-50%, -50%); pointer-events: none; }
 
 /* header */
 #header { height: 80px; width:100%; z-index: 2; top: 0px; position: fixed; padding: 0 calc(var(--gutter-size)*2); font-family: 'Inter',sans-serif; box-sizing: border-box; transition: All 0.2s ease; -webkit-transition: All 0.2s ease;	-moz-transition: All 0.2s ease;	-o-transition: All 0.2s ease; }

@@ -89,6 +89,7 @@ body {
   width: 100%;
   margin-bottom: 10px;
   position: relative;
+  padding-top: 120px;
 }
 #intro-title {
   display: flex;
@@ -103,71 +104,14 @@ body {
   letter-spacing: -0.05em;
 }
 /*#intro-title { display: flex; flex-direction: column; font-family: 'Gilda Display',sans-serif; justify-content: center; margin: calc(var(--height-space) * 1.5) 0 calc(100% / 40) 0; line-height: 1; font-size: 7em; font-weight: 500; }*/
-#intro-title .main-title-text {
-  display: block;
-  line-height: 1;
-}
-#intro-title .main-title-text:first-of-type {
-  font-size: 2rem;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-#intro .main-deco {
-  position: absolute;
-}
-#intro .main-deco img {
-  width: 100%;
-}
-#intro .main-deco.deco-1 {
-  top: -3%;
-  left: 20%;
-  width: 30px;
-  height: 30px;
-}
-#intro .main-deco.deco-2 {
-  top: -10%;
-  right: 25%;
-  width: 60px;
-  height: 60px;
-}
-#intro .main-deco.deco-3 {
-  top: 12%;
-  right: 15%;
-  width: 20px;
-  height: 20px;
-}
-#intro .main-deco.deco-4 {
-  top: 16%;
-  left: 10%;
-}
-#intro .intro-desc {
-  text-align: left;
-}
-#intro .intro-desc .text-plane .about-tit {
-  font-size: 26px;
-  margin-bottom: 14px;
-}
-#intro .intro-desc .text-plane .about-sub-tit {
-  font-size: 18px;
-  letter-spacing: -0.4px;
-  line-height: 1.4;
-  margin-bottom: 40px;
-}
-#intro .intro-desc > a {
-  font-size: 18px;
-  letter-spacing: -0.4px;
-}
-#intro .intro-desc > a:hover {
-  color: orangered;
-  padding-left: 10px;
-  transition: all 0.3s;
-}
-.main-vedio {
-  width: 100%;
-  height: 700px;
-  overflow: hidden;
-  margin-bottom: 40px;
-}
+#intro-title .main-title-text { display:block; line-height: 1;}
+#intro-title .main-title-text:first-of-type { font-size: 2rem; font-weight: 500; margin-bottom: 10px;}
+#intro .intro-desc { text-align: left; }
+#intro .intro-desc .text-plane .about-tit { font-size: 26px; margin-bottom: 14px; }
+#intro .intro-desc .text-plane .about-sub-tit { font-size: 18px; letter-spacing: -0.4px; line-height: 1.4;margin-bottom: 40px;}
+#intro .intro-desc > a {  font-size: 18px; letter-spacing: -0.4px; }
+#intro .intro-desc > a:hover { color: orangered; padding-left: 10px; transition: all 0.3s;}
+.intro { display: flex; align-items: center; }
 
 /* 퍼블리싱 */
 #project-wrap {
