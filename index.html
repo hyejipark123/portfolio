@@ -16,65 +16,69 @@
 
     <!-- web font -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="css/font.css" />
-    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/main.min.css" />
+  
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" href="css/animate.css" />
     <script src="js/script.js"></script>
     <script src="js/wow.min.js"></script>
   </head>
   <body>
+    <!-- 마우스 커서 라운드 도형 -->
   <div class="dot"></div>
   <div id="wrap">
-    <header>
-      <div id="header" class="gnb bgcolor" data-color="white">
-        <h1 class="logo">
-          <a href="index.html">
-            <span>PARK.</span> HYEJI
-          </a>
-        </h1>
-        <div class="nav-wrap">
-          <button class="gnb-btn" aria-label="open menu"></button>
-          <div class="nav">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="html/about.html">About</a></li>
-              <li><a href="html/project.html">Project</a></li>
-            </ul>
-            <div class="contact d-flex">
-              <div class="cont-list"><p><span>M</span>gpwlchlr5@naver.com</p></div>
-              <div class="cont-list"><p><span>T</span>010 7644 8992</p></div>
-            </div>
-          </div>
-        </div>
+    <!-- header -->
+    <header id="header" class="header">
+      <div class="header__inner" data-color="white">
+        <nav class="main-menu">
+          <ul class="main-menu-container">
+            <li class="main-menu-item">
+              <a href="/"><span>01/Home</span></a>
+            </li>
+            <li class="main-menu-item">
+              <a href="/#about"><span>02/About</span></a>
+            </li>
+            <li class="main-menu-item">
+              <a href="/#work"><span>03/Work</span></a>
+            </li>
+            <li class="main-menu-item">
+              <a href="/#contact"><span>04/Contact</span></a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
+    <!-- //header -->
+    <!-- content -->
     <div id="content">
-      <section id="intro" class="bgcolor intro" data-color="white">
-        <div class="intro-img">
-          <div style="width: 400px;height: 550px; background-color: gray;"></div>
-        </div>
-        <div class="intro-desc">
-          <div class="text-plane">
-            <h3 class="about-tit">안녕하세요, 박혜지입니다.</h3> 
-            <div class="about-sub-tit">
-              <p>작은 노력들과 집요함으로 결과물을 만들어내는 웹 퍼블리셔입니다. ⸜( •ᴗ• )⸝</p>
-              <p>팀의 한 일원으로서 잘 어우러지며, 사람과의 연결고리가 되고자 합니다.</p>
-              <p>탄탄한 마크업을 기본으로 효율적인 코드의 CSS, 시선을 이끄는 동적인 Javascript를 추구하며,</p>
-              <p>다양한 프레임워크와 라이브러리를 배우고 성장하는 도전적인 퍼블리셔가 되겠습니다.</p>
-            </div>
+      <main id="home">
+
+      </main>
+      <!-- 02.about -->
+      <section id="about" class="about">
+        <div class="about-desc">
+          <h2 class="about-tit">안녕하세요, 박혜지입니다.</h2> 
+          <div class="about-sub-tit">
+            <p>작은 노력들과 집요함으로 결과물을 만들어내는 웹 퍼블리셔입니다. ⸜( •ᴗ• )⸝</p>
+            <p>팀의 한 일원으로서 잘 어우러지며, 사람과의 연결고리가 되고자 합니다.</p>
+            <p>탄탄한 마크업을 기본으로 효율적인 코드의 CSS, 시선을 이끄는 동적인 Javascript를 추구하며,</p>
+            <p>다양한 프레임워크와 라이브러리를 배우고 성장하는 도전적인 퍼블리셔가 되겠습니다.</p>
           </div>
           <a href="./html/about.html">자기소개 더보기 →</a>
         </div>
+        <div class="about-img">
+          <div style=" background-color: gray;"></div>
+        </div>
       </section>
+      <!-- 03.work -->
+      <section id="work"></section>
+      <!-- 04.contact-->
+      <section id="contact"></section>
+
+
+
+
        <!-- publishing List -->
        <section id="project-wrap" class="bgcolor" data-color="white">
         <div class="project-container">
