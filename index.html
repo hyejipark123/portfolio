@@ -8,24 +8,17 @@
     <link rel="shortcut icon" href="img/favicon.ico" />
 
     <!-- swiper_cdn -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-    <!-- web font -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="css/main.min.css" />
-  
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" href="css/animate.css" />
     <script src="js/script.js"></script>
     <script src="js/wow.min.js"></script>
   </head>
   <body>
-    <!-- 마우스 커서 라운드 도형 -->
+    <!-- 마우스 커서 -->
   <div class="dot"></div>
   <div id="wrap">
     <!-- header -->
@@ -52,7 +45,7 @@
     <!-- //header -->
     <!-- content -->
     <div id="content">
-      <main id="home">
+      <main id="home" class="home">
 
       </main>
       <!-- 02.about -->
@@ -67,323 +60,130 @@
           </div>
           <a href="./html/about.html">자기소개 더보기 →</a>
         </div>
-        <div class="about-img">
-          <div style=" background-color: gray;"></div>
-        </div>
+        <div class="about-img">이미지 추가</div>
       </section>
       <!-- 03.work -->
-      <section id="work"></section>
-      <!-- 04.contact-->
-      <section id="contact"></section>
-
-
-
-
-       <!-- publishing List -->
-       <section id="project-wrap" class="bgcolor" data-color="white">
-        <div class="project-container">
-          <div class="row-inside d-flex align-items-start">
+      <section id="work" class="work">
+        <!-- 퍼블리싱 영역 -->
+        <div class="work-wrap">
+          <div class="work-inside">
             <!-- 좌측_tit -->
-            <div class="row-sidebar">
-              <div class="row-controls">
-                <p>WEB<br />PUBLISHING.</p>
+            <div class="work-inside-left">
+              <div class="work-inside-left--controls">
+                <p>Work.<br />Web Publishing</p>
               </div>
             </div>
             <!-- 우측_contents -->
-            <div class="row-contents">
-              <div class="row-portfolio">
-                <ul class="row-list">
-                  <li class="row-item">
-                    <a
-                      href="javascript:alert('준비중입니다 :)');"
-                      onfocus="this.blur()"
-                      class="item-box d-flex align-items-start"
-                    >
-                      <div class="w-660 padding-all m-r-txt">
-                        <div class="top-txt txt-wrap">
-                          <h3>
-                            <span class="name">CDP</span
-                            ><span class="no">01</span>
-                          </h3>
-                          <img src="img/ico_arrow.png" class="w100 arrow" />
-                          <div class="item-txt">
-                            고객 확보에서 유지까지 전 과정을 지원하는 고객
-                            데이터 솔루션으로서 고객 데이터 관련 기능과 고급
-                            툴을 제공하는 프로젝트입니다.
-                          </div>
-                          <div class="skill-wrap">
-                            <span class="skill">Html</span>
-                            <span class="skill">CSS</span>
-                            <span class="skill">SCSS</span>
-                            <span class="skill">Vue.js</span>
-                            <span class="skill">antd Design</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="w-660 item-img pl-pr-pt border-left">
-                        <img src="img/cdp-h.png" />
-                      </div>
-                    </a>
-                  </li>
-                  <li class="row-item">
-                    <a
-                      href="html/homepage-trial.html"
-                      class="item-box d-flex align-items-start"
-                    >
-                      <div class="w-660 item-img padding-all border-right">
-                        <img src="img/homepageTrial-h.jpg" />
-                      </div>
-                      <div class="w-660 pl-pr-pt m-l-txt">
-                        <div class="top-txt txt-wrap">
-                          <h3>
-                            <span class="name">Homepage Trial</span
-                            ><span class="no">02</span>
-                          </h3>
-                          <img src="img/ico_arrow.png" class="w100 arrow" />
-                          <div class="item-txt">
-                            홈페이지 내 태블릿 오더 '체험하기' 페이지 UI 개선
-                            프로젝트 작업입니다.
-                          </div>
-                          <div class="skill-wrap">
-                            <span class="skill">Html</span>
-                            <span class="skill">CSS</span>
-                            <span class="skill">SCSS</span>
-                            <span class="skill">JavaScript</span>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="row-item">
-                    <a
-                      href="html/starhorse.html"
-                      class="item-box d-flex align-items-start"
-                    >
-                      <div class="w-660 padding-all m-r-txt">
-                        <div class="top-txt txt-wrap">
-                          <h3>
-                            <span class="name">StarHorse</span
-                            ><span class="no">03</span>
-                          </h3>
-                          <img src="img/ico_arrow.png" class="w100 arrow" />
-                          <div class="item-txt">
-                            Starhorse는 인공지능 딥러닝을 활용한 경마 순위
-                            예측 프로그램입니다. 기상청과 마사회에서 제공하는
-                            OPEN API 데이터를 자동으로 수집하며, 순위 예측
-                            프로그램 내 자료로 활용할 수 있도록 저장하는
-                            대시보드 형태의 반응형 웹페이지입니다.
-                          </div>
-                          <div class="skill-wrap">
-                            <span class="skill">Html</span>
-                            <span class="skill">CSS</span>
-                            <span class="skill">JavaScript</span>
-                            <span class="skill">Jquery</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="w-660 item-img pl-pr-pt border-left">
-                        <img src="img/starhorse-h.jpg" />
-                      </div>
-                    </a>
-                  </li>
-                  <li class="row-item">
-                    <a
-                      href="html/somayoga.html"
-                      class="item-box d-flex align-items-start"
-                    >
-                      <div class="w-660 item-img padding-all border-right">
-                        <img src="img/somayoga-h.jpg" />
-                      </div>
-                      <div class="w-660 pl-pr-pt m-l-txt">
-                        <div class="top-txt txt-wrap">
-                          <h3>
-                            <span class="name">SomaYoga</span
-                            ><span class="no">04</span>
-                          </h3>
-                          <img src="img/ico_arrow.png" class="w100 arrow" />
-                          <div class="item-txt">
-                            소마요가코리아는 소마틱스와 요가를 접목한
-                            소마요가를 기본 바탕으로 하는 요가 스튜디오입니다.
-                          </div>
-                          <div class="skill-wrap">
-                            <span class="skill">Html</span>
-                            <span class="skill">CSS</span>
-                            <span class="skill">XE</span>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="row-item">
-                    <a
-                      href="html/sweat.html"
-                      class="item-box d-flex align-items-start"
-                    >
-                      <div class="w-660 padding-all m-r-txt">
-                        <div class="top-txt txt-wrap">
-                          <h3>
-                            <span class="name">Sweat</span
-                            ><span class="no">05</span>
-                          </h3>
-                          <img src="img/ico_arrow.png" class="w100 arrow" />
-                          <div class="item-txt">
-                            스웨트(전 스포츠마켓)은 스포츠 의류 및 용품 등
-                            제품을 판매하는 쇼핑몰입니다.
-                          </div>
-                          <div class="skill-wrap">
-                            <span class="skill">Html</span>
-                            <span class="skill">CSS</span>
-                            <span class="skill">JavaScript</span>
-                            <span class="skill">Jquery</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="w-660 item-img pl-pr-pt border-left">
-                        <img src="img/sweat-h.jpg" />
-                      </div>
-                    </a>
-                  </li>
-                  <li class="row-item">
-                    <a
-                      href="html/mamapick.html"
-                      class="item-box d-flex align-items-start"
-                    >
-                      <div class="w-660 item-img padding-all border-right">
-                        <img src="img/mamapick-h.jpg" />
-                      </div>
-                      <div class="w-660 pl-pr-pt m-l-txt">
-                        <div class="top-txt txt-wrap">
-                          <h3>
-                            <span class="name">Mamapick</span
-                            ><span class="no">06</span>
-                          </h3>
-                          <img src="img/ico_arrow.png" class="w100 arrow" />
-                          <div class="item-txt">
-                            마마픽은 유아동 의류(내복)및 악세서리를 판매하는
-                            브랜드입니다.
-                          </div>
-                          <div class="skill-wrap">
-                            <span class="skill">Html</span>
-                            <span class="skill">CSS</span>
-                            <span class="skill">JavaScript</span>
-                            <span class="skill">Jquery</span>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="row-item">
-                    <a
-                      href="html/simplica.html"
-                      class="item-box d-flex align-items-start"
-                    >
-                      <div class="w-660 padding-all m-r-txt">
-                        <div class="top-txt txt-wrap">
-                          <h3>
-                            <span class="name">Simplica</span
-                            ><span class="no">07</span>
-                          </h3>
-                          <img src="img/ico_arrow.png" class="w100 arrow" />
-                          <div class="item-txt">
-                            심플리카는 해외 메이크업 브랜드 제품 및 자사
-                            제품을 론칭하여 ‘비건뷰티’를 내세우는 화장품
-                            브랜드입니다.
-                          </div>
-                          <div class="skill-wrap">
-                            <span class="skill">Html</span>
-                            <span class="skill">CSS</span>
-                            <span class="skill">JavaScript</span>
-                            <span class="skill">Jquery</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="w-660 item-img pl-pr-pt border-left">
-                        <img src="img/simplica-h.jpg" />
-                      </div>
-                    </a>
-                  </li>
-                  <li class="row-item">
-                    <a
-                      href="html/octobooks.html"
-                      class="item-box d-flex align-items-start"
-                    >
-                      <div class="w-660 item-img padding-all border-right">
-                        <img src="img/octobooks-h.jpg" />
-                      </div>
-                      <div class="w-660 pl-pr-pt m-l-txt">
-                        <div class="top-txt txt-wrap">
-                          <h3>
-                            <span class="name">OctoBooks</span
-                            ><span class="no">08</span>
-                          </h3>
-                          <img src="img/ico_arrow.png" class="w100 arrow" />
-                          <div class="item-txt">
-                            동양미디어(옥토북스)는 유아동 해외도서를 판매하는
-                            브랜드입니다.
-                          </div>
-                          <div class="skill-wrap">
-                            <span class="skill">Html</span>
-                            <span class="skill">CSS</span>
-                            <span class="skill">JavaScript</span>
-                            <span class="skill">Jquery</span>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
+            <div class="work-contents">
+              <div class="list">
+                <a href="#" class="list-item">           
+                    <img src="img/cdp-h.png" alt="cdp 메인 배너 이미지"/>
+                    <div class="list-item-txt">
+                      <h4 >CDP(고객 데이터 플랫폼)</h4>
+                    </div>
+                </a>
+                <a href="html/homepage-trial.html" class="list-item">
+                    <img src="img/homepageTrial-h.jpg" alt="체험하기 메인 배너 이미지"/>
+                    <div class="list-item-txt">
+                      <h4 >태블릿 주문하기 체험하기</h4>
+                    </div>
+                </a>
+              </div>
+              <div class="list">
+                <a href="html/starhorse.html" class="list-item">
+                    <img src="img/starhorse-h.jpg" alt="스타홀스 메인 배너 이미지"/>
+                    <div class="list-item-txt">
+                      <h4 >StarHorse</h4>
+                    </div>
+                </a>
+                <a href="html/somayoga.html"  class="list-item">
+                  <img src="img/somayoga-h.jpg" alt="소마요가 메인 배너 이미지"/>
+                  <div class="list-item-txt">
+                    <h4>소마요가</h4>
+                  </div>
+                </a>
+              </div>
+              <div class="list">
+                <a href="html/sweat.html" class="list-item">
+                  <img src="img/sweat-h.jpg" alt="스웨트 메인 배너 이미지"/>
+                  <div class="list-item-txt">
+                    <h4>스웨트</h4>
+                  </div>
+                </a>
+                <a href="html/mamapick.html" class="list-item">
+                  <img src="img/mamapick-h.jpg" alt="마마픽 메인 배너 이미지"/>
+                  <div class="list-item-txt">
+                    <h4>마마픽</h4>
+                  </div>
+                </a>
+              </div>
+              <div class="list">
+                <a href="html/simplica.html" class="list-item">
+                  <img src="img/simplica-h.jpg" alt="심플리카 메인 배너 이미지"/>
+                  <div class="list-item-txt">
+                    <h4>심플리카</h4>
+                  </div>
+                </a>
+                <a href="html/octobooks.html" class="list-item">
+                  <img src="img/octobooks-h.jpg" alt="옥토북스 메인 배너 이미지"/>
+                  <div class="list-item-txt">
+                    <h4>옥토북스</h4>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    
-      <!-- design List -->
-      <section id="design-wrap" class="bgcolor" data-color="black">
-        <div class="design-slide">
-          <div class="slider__vertical-line"></div>
-          <div class="cont-wrap d-flex align-items-start">
-            <div class="d-lbox">
-              <div class="title-box">
-                <p>PROJECT WORK<br><span>DESIGN</span>.</p>
-              </div>
-            </div>
-            <div class="d-rbox wow fadeInUp">
-              <div class="swiper main-design-list">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <a href="html/design_sns.html" class="design-box">
-                      <img src="img/sns_hover_img.jpg">
-                      <p class="design-txt">SNS Contents</p>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="html/design_product.html" class="design-box">
-                      <img src="img/detail_hover_img.jpg">
-                      <p class="design-txt">Detail Page</p>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="html/design_event.html" class="design-box">
-                      <img src="img/event_hover.jpg">
-                      <p class="design-txt">Event Page</p>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="html/design_card.html" class="design-box">
-                      <img src="img/card_hover.jpg">
-                      <p class="design-txt">Cardnews</p>
-                    </a>
-                  </div>
+        <!-- 디자인 영역 -->
+        <div class="disign">
+          <div class="disign-tit">
+            <h4>Work.<span>Design</span></h4>
+            <p>등 있은 것 1,110,000원 터득하다. "실거래를 않아 그, 있는 
+              등 일제의 규약의 방기하다" 득표다 지방이, 않는지, 병원으로 요양한
+              이웃이 반영하다. 도발도 개발을 권고하는 민주화의 상수원이 없다. 
+              사랑을 가시적은 22개 전체에서 여당이다 말할까.</p>
+          </div>
+          <div class="disign-list-wrap">
+            <ul id="list_ul" class="disign-list">
+              <li class="disign-item">
+                <a href="html/design_sns.html">
+                  <p class="disign-item-name">SNS Contents</p>
+                </a>
+                <div class="img-wrap">
+                  <img src="img/sns_hover_img.jpg" alt="sns 컨텐츠 이미지">
                 </div>
-              </div>
-            </div>
-            <div class="swiper-button-next swiper-button"></div>
-            <div class="swiper-button-prev swiper-button"></div>
-            <div class="swiper-pagination"></div>
+              </li>
+              <li class="disign-item">
+                <a href="html/design_product.html">
+                  <p class="disign-item-name">Detail Page</p>
+                </a>
+                <div class="img-wrap">
+                  <img src="img/detail_hover_img.jpg" alt="상세페이지 이미지">
+                </div>
+              </li>
+              <li class="disign-item">
+                <a href="html/design_event.html">
+                  <p class="disign-item-name">Event</p>
+                </a>
+                <div class="img-wrap">
+                  <img src="img/event_hover.jpg" alt="이벤트 페이지 이미지">
+                </div>
+              </li>
+              <li class="disign-item">
+                <a href="html/design_card.html">
+                  <p class="disign-item-name">Card News</p>
+                </a>
+                <div class="img-wrap">
+                  <img src="img/card_hover.jpg" alt="카드뉴스 이미지">
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
+      <!-- 04.contact-->
+      <!-- <section id="contact"></section> -->
+
      </div>
       <!-- footer -->
       <footer>
@@ -413,38 +213,25 @@
     </div>
   </body>
   <script>
-    var swiper = new Swiper(".main-design-list", {
-      spaceBetween: 30,
-      //centeredSlides: true,
-      slidesPerView: 1.2,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        type: "fraction",
-        formatFractionCurrent: function (number) {
-          return ("0" + number).slice(-2);
-        },
-        formatFractionTotal: function (number) {
-          return ("0" + number).slice(-2);
-        },
-        renderFraction: function (currentClass, totalClass) {
-          return (
-            '<span class="' +
-            currentClass +
-            '"></span>' +
-            " / " +
-            '<span class="' +
-            totalClass +
-            '"></span>'
-          );
-        },
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
+    const div_wraps = document.querySelectorAll('.img-wrap');
+    document.getElementById('list_ul').addEventListener('mousemove', function(e){
+      const x = e.clientX;
+      const y = e.clientY;
+
+      div_wraps.forEach(function(div){
+        div.style.transform = `translate(${x}px, ${y}px)`;
+      });
     });
 
-    new WOW().init();
+    const list = document.querySelectorAll('.disign-item');
+    // forEach의 arrow function
+    list.forEach(li_img => {
+      li_img.addEventListener('mouseover', function(){
+        li_img.querySelector('.img-wrap').style.visibility = 'visible';
+      });
+      li_img.addEventListener('mouseleave', function(){
+        li_img.querySelector('.img-wrap').style.visibility = 'hidden';
+      });
+    });
   </script>
 </html>

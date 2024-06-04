@@ -96,7 +96,6 @@ body {
 .row-sidebar {
   flex: 0 0 auto;
   width: 33.33333333%;
-  min-height: 3390px;
 }
 .row-sidebar .row-controls {
   position: -webkit-sticky;

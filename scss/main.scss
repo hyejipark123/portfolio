@@ -1,5 +1,11 @@
 @import 'reset';
 
+@mixin flexBox($align) {
+    display: flex;
+    align-items: $align;
+}
+
+
 * {
     color: $primary_text;
 }
@@ -11,7 +17,7 @@
     z-index: 20;
     min-width: 1260px;
     background-color: transparent;
-    transition: 0.2s;
+    transition: all 0.2s;
     &__inner {
         display: inline-block;
         vertical-align: middle;
@@ -20,14 +26,14 @@
         width: 100%;
         height: 40px;
         padding: 20px 0;
-        transition: 0.2s;
+        transition: all 0.2s;
     }
     .main-menu {
         display: inline-block;
         vertical-align: middle;
         box-sizing: border-box;
         width: 100%;
-        padding: 0 60px;
+        padding: 0 $pd-14;
         &-container {
             display: flex;
             align-items: center;
@@ -48,23 +54,103 @@
         }
     }
 }
-#home {
+
+.home {
+    @include flexBox(center);
+    justify-content: center;
     width: 100%;
     min-height: 100vh;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: yellow;
 }
+
 .about {
-    display: flex;
-    align-items: center;
+    @include flexBox(center);
     justify-content: center;
-    padding: $header-height 60px 0;
+    padding: $header-height $pd-14 0;
     &-img {
         flex: 1;
         min-height: calc(100vh - 120px);
         background-color: aqua;
+    }
+}
+
+.work {
+    padding: 0 $pd-14;
+    &-wrap {
+        border-top: 1px solid #ddd;
+        margin-top: $header-height;
+    }
+    &-inside {
+        @include flexBox(start);
+        border-bottom: 1px solid #ddd;
+        &-left {
+            flex: 0 0 auto;
+            width: 33.33333333%;
+          &--controls {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            left: 0;
+            padding: 3rem 0 0 0;
+            top: 20px;
+            p {
+                font-size: 46px;
+                font-weight: 300;
+                letter-spacing: -0.02em;
+                font-weight: 400;
+                line-height: 110%;
+            }
+          }
+        }
+    }
+    &-contents{
+        width: 100%;
+        border-left: 1px solid #ddd;
+        .list {
+            @include flexBox(start);
+            gap: 50px;
+            padding: $pd-8;
+            justify-content: flex-start;
+            &-item {
+                flex: 1 1 45%;
+                &:not(:first-child){
+                    margin-top: 250px;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+.disign{
+    padding: $header-height 0;
+    &-tit {
+        @include flexBox(start);
+        justify-content: space-between;
+        p {
+            width: 400px;
+        }
+    }
+    &-list {
+        position: relative;
+       
+    }
+    &-item {
+        padding: 2rem 0;
+        border-top: 1px solid #ddd;
+        .img-wrap {
+            position: absolute; top: 0; left: 0; visibility: hidden; z-index: -99;
+            img {
+                transform: translate(-50%, -100%);
+                position: absolute;
+                opacity: .85;
+                width: 430px;
+                height: 300px;
+            }
+        }
+        &-name {
+            font-size: 42px;
+        }
     }
 }
