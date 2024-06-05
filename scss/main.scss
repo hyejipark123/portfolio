@@ -1,13 +1,10 @@
+@charset "UTF-8";
+
 @import 'reset';
-
-@mixin flexBox($align) {
-    display: flex;
-    align-items: $align;
-}
-
+@import 'variables';
 
 * {
-    color: $primary_text;
+    color: $black;
 }
 .header {
     position: fixed;
@@ -45,7 +42,7 @@
                 display: block;
                 width: 0;
                 height: 2px;
-                background: #000;
+                background: $black;
                 transition: all .5s;
             }
             &:hover::after{
@@ -86,8 +83,8 @@
         &-left {
             flex: 0 0 auto;
             width: 33.33333333%;
+            min-height: 3300px;
           &--controls {
-            position: -webkit-sticky;
             position: sticky;
             top: 0;
             left: 0;
@@ -134,11 +131,18 @@
     }
     &-list {
         position: relative;
-       
+        margin-top: $header-height;
     }
     &-item {
-        padding: 2rem 0;
+        padding: 2rem;
         border-top: 1px solid #ddd;
+        a {
+            @include flexBox(center);
+            justify-content: space-between;
+            img {
+                width: 14px;
+            }
+        }
         .img-wrap {
             position: absolute; top: 0; left: 0; visibility: hidden; z-index: -99;
             img {
@@ -150,7 +154,12 @@
             }
         }
         &-name {
-            font-size: 42px;
+            font-size: $font-size_md;
+            min-width: 300px;
+        }
+        &-sub {
+            text-align: left;
+            min-width: 180px;
         }
     }
 }

@@ -66,6 +66,12 @@ table {
   pointer-events: none;
 }
 
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 * {
   color: #000;
 }
@@ -150,6 +156,7 @@ table {
 .work-inside-left {
   flex: 0 0 auto;
   width: 33.33333333%;
+  min-height: 3300px;
 }
 .work-inside-left--controls {
   position: sticky;
@@ -199,10 +206,19 @@ table {
 }
 .disign-list {
   position: relative;
+  margin-top: 7rem;
 }
 .disign-item {
-  padding: 2rem 0;
+  padding: 2rem;
   border-top: 1px solid #ddd;
+}
+.disign-item a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.disign-item a img {
+  width: 14px;
 }
 .disign-item .img-wrap {
   position: absolute;
@@ -219,5 +235,10 @@ table {
   height: 300px;
 }
 .disign-item-name {
-  font-size: 42px;
+  font-size: 32px;
+  min-width: 300px;
+}
+.disign-item-sub {
+  text-align: left;
+  min-width: 180px;
 }

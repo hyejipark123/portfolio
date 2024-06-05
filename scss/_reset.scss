@@ -1,14 +1,4 @@
-// 색상
-$primary_text: #000;
-$secondary_text: #d9d9d9;
-
-// 폰트
-$font_size: 16px;
-
-// 여백
-$header-height: 7rem;
-$pd-8: 2rem;
-$pd-14: 3.5rem;
+@charset "UTF-8";
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -63,5 +53,16 @@ table {
     border-spacing: 0;
 }
 .dot { 
-    top:0; left:0; z-index:99; position: absolute; width: 40px; height: 40px; border-radius: 50%; background: #fff; transition: transform 0.2s; mix-blend-mode: difference; transform: translate(-50%, -50%); pointer-events: none; 
+    top:0; 
+    left:0;
+    z-index:99;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    transition: transform 0.2s;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+    pointer-events: none; 
 }
