@@ -1,10 +1,21 @@
 /* cursor_round */
-document.addEventListener("mousemove", function(e){
-    const dot = document.querySelector('.dot');
+document.addEventListener("mousemove", function(e) {
+  const dot = document.querySelector('.dot');
+  const noDotZone = document.querySelector('.disign-list-wrap');
+  const zoneRect = noDotZone.getBoundingClientRect();
+
+  // Check if mouse is within the no-dot-zone
+  const isInNoDotZone = e.clientX >= zoneRect.left && e.clientX <= zoneRect.right &&
+                        e.clientY >= zoneRect.top && e.clientY <= zoneRect.bottom;
+
+  if (isInNoDotZone) {
+    dot.style.display = 'none';
+  } else {
+    dot.style.display = 'block';
     dot.style.left = e.pageX + 'px';
     dot.style.top = e.pageY + 'px';
-  });
-  
+  }
+});
 /* header scroll event */
 // $(function(){
 // var lastScrollTop = 0, delta = 15;

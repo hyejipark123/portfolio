@@ -7,13 +7,20 @@
     <title>Park Hyeji Portfolio</title>
     <link rel="shortcut icon" href="img/favicon.ico" />
 
-    <!-- swiper_cdn -->
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://webfontworld.github.io/lotte/GhanaChocolate.css" rel="stylesheet">
+    
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/animate.css" />  
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/wow.min.js"></script>
   </head>
@@ -51,16 +58,31 @@
       <!-- 02.about -->
       <section id="about" class="about">
         <div class="about-desc">
-          <h2 class="about-tit">안녕하세요.<br />0000 퍼블리셔 박혜지입니다.</h2> 
-          <div class="about-sub-tit">
-            <p>작은 노력들과 집요함으로 결과물을 만들어내는 웹 퍼블리셔입니다. ⸜( •ᴗ• )⸝</p>
-            <p>팀의 한 일원으로서 잘 어우러지며, 사람과의 연결고리가 되고자 합니다.</p>
-            <p>탄탄한 마크업을 기본으로 효율적인 코드의 CSS, 시선을 이끄는 동적인 Javascript를 추구하며,</p>
-            <p>다양한 프레임워크와 라이브러리를 배우고 성장하는 도전적인 퍼블리셔가 되겠습니다.</p>
+          <h2 class="about-desc-tit">안녕하세요!<br /><span>디테일에 강한</span> 웹 퍼블리셔<br />박혜지입니다.</h2> 
+          <div class="about-desc-sub">
+            <p>모든 프로젝트에서 작은 부분까지 신경 쓰며, 완벽한 웹 페이지를 구현하는 것을 목표로 합니다.<br>
+              픽셀 하나까지 놓치지 않고 디자인과 코드를 최적화하여, 높은 품질의 웹사이트를 제공하며<br>
+              HTML, CSS, JavaScript 등 다양한 기술을 활용해 섬세한 작업을 진행합니다.<br>
+            </p>
+            <p>
+              또한 저는 이 일을 함으로써 나아갈 힘과 원동력이 생긴다고 생각합니다.<br>
+              프로세스와 소통에 긍정적인 태도를 가지고, 좋은 에너지를 공유하고,<br>
+              다양한 시도를 하고 실패와 성공을 통해 얻은 경험들로 더 나은 퍼블리셔로 성장하고 싶습니다.<br>
+              현재에 만족하지 않는 퍼블리셔가 되기 위해 끊임없이 새로운 것에 도전하려 노력하고 있습니다. 
+            </p>
           </div>
           <a href="./html/about.html">자기소개 더보기 →</a>
         </div>
-        <div class="about-img">이미지 추가</div>
+        <div class="about-img">
+          <img src="../img/self-img.jpg" alt="프로필 이미지" class="about-img-profile"/>
+          <div class="about-deco">
+            <img src="../img/main/icon_html.png" alt="html 로고" class="about-deco-img html"/>
+            <img src="../img/main/icon_css.png" alt="css 로고" class="about-deco-img css"/>
+            <img src="../img/main/icon_figma.png" alt="github 로고" class="about-deco-img figma"/>
+            <img src="../img/main/icon_github.png" alt="github 로고" class="about-deco-img github"/>
+            <img src="../img/main/icon_js.png" alt="JavaScript 로고" class="about-deco-img js"/>
+          </div>
+        </div>
       </section>
       <!-- 03.work -->
       <section id="work" class="work">
@@ -70,22 +92,37 @@
             <!-- 좌측_tit -->
             <div class="work-inside-left">
               <div class="work-inside-left--controls">
-                <p>Work.<br />Web Publishing</p>
+                <p class="tit">Work .</p>
+                <p class="sub">Web Publishing</p>
               </div>
             </div>
             <!-- 우측_contents -->
             <div class="work-contents">
               <div class="list">
+                <a href="html/homepage-trial.html" class="list-item">
+                  <img src="img/homepageTrial-h.jpg" alt="체험하기 메인 배너 이미지"/>
+                  <div class="list-item-txt">
+                    <div class="list-item-tit">
+                      <h4>태블릿 주문 체험하기</h4>
+                      <p>'2024</p>
+                    </div>
+                    <div class="list-item-info">
+                      <p>Style Component / Scss</p>
+                      <p>@티오더</p>
+                    </div>
+                  </div>
+                </a>
                 <a href="#" class="list-item">           
                     <img src="img/cdp-h.png" alt="cdp 메인 배너 이미지"/>
                     <div class="list-item-txt">
-                      <h4 >CDP(고객 데이터 플랫폼)</h4>
-                    </div>
-                </a>
-                <a href="html/homepage-trial.html" class="list-item">
-                    <img src="img/homepageTrial-h.jpg" alt="체험하기 메인 배너 이미지"/>
-                    <div class="list-item-txt">
-                      <h4 >태블릿 주문하기 체험하기</h4>
+                      <div class="list-item-tit">
+                        <h4>CDP(고객 데이터 플랫폼)</h4>
+                        <p>'2023-24</p>
+                      </div>
+                      <div class="list-item-info">
+                        <p>Vue.js / Ant Design</p>
+                        <p>@티오더</p>
+                      </div>
                     </div>
                 </a>
               </div>
@@ -93,41 +130,83 @@
                 <a href="html/starhorse.html" class="list-item">
                     <img src="img/starhorse-h.jpg" alt="스타홀스 메인 배너 이미지"/>
                     <div class="list-item-txt">
-                      <h4 >StarHorse</h4>
+                      <div class="list-item-tit">
+                        <h4>StarHorse</h4>
+                        <p>'2022</p>
+                      </div>
+                      <div class="list-item-info">
+                        <p>DashBoard / UI Design</p>
+                        <p>@에스페셜디자인</p>
+                      </div>
                     </div>
                 </a>
-                <a href="html/somayoga.html"  class="list-item">
-                  <img src="img/somayoga-h.jpg" alt="소마요가 메인 배너 이미지"/>
-                  <div class="list-item-txt">
-                    <h4>소마요가</h4>
-                  </div>
-                </a>
-              </div>
-              <div class="list">
                 <a href="html/sweat.html" class="list-item">
                   <img src="img/sweat-h.jpg" alt="스웨트 메인 배너 이미지"/>
                   <div class="list-item-txt">
-                    <h4>스웨트</h4>
-                  </div>
-                </a>
-                <a href="html/mamapick.html" class="list-item">
-                  <img src="img/mamapick-h.jpg" alt="마마픽 메인 배너 이미지"/>
-                  <div class="list-item-txt">
-                    <h4>마마픽</h4>
+                    <div class="list-item-tit">
+                      <h4>스웨트</h4>
+                      <p>'2022</p>
+                    </div>
+                    <div class="list-item-info">
+                      <p>Cafe24 / jQuery</p>
+                      <p>@에스페셜디자인/스포츠마켓</p>
+                    </div>
                   </div>
                 </a>
               </div>
               <div class="list">
+                <a href="html/somayoga.html"  class="list-item">
+                  <img src="img/somayoga-h.jpg" alt="소마요가 메인 배너 이미지"/>
+                  <div class="list-item-txt">
+                    <div class="list-item-tit">
+                      <h4>소마요가</h4>
+                      <p>'2022</p>
+                    </div>
+                    <div class="list-item-info">
+                      <p>XpressEngine</p>
+                      <p>@에스페셜디자인/소마요가</p>
+                    </div>
+                  </div>
+                </a>
                 <a href="html/simplica.html" class="list-item">
                   <img src="img/simplica-h.jpg" alt="심플리카 메인 배너 이미지"/>
                   <div class="list-item-txt">
-                    <h4>심플리카</h4>
+                    <div class="list-item-tit">
+                      <h4>심플리카</h4>
+                      <p>'2022</p>
+                    </div>
+                    <div class="list-item-info">
+                      <p>Cafe24 / jQuery</p>
+                      <p>@에스페셜디자인/케이원 코스메틱</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="list">
+                <a href="html/mamapick.html" class="list-item">
+                  <img src="img/mamapick-h.jpg" alt="마마픽 메인 배너 이미지"/>
+                  <div class="list-item-txt">
+                    <div class="list-item-tit">
+                      <h4>마마픽</h4>
+                      <p>'2021</p>
+                    </div>
+                    <div class="list-item-info">
+                      <p>Cafe24 / jQuery</p>
+                      <p>@에스페셜디자인</p>
+                    </div>
                   </div>
                 </a>
                 <a href="html/octobooks.html" class="list-item">
                   <img src="img/octobooks-h.jpg" alt="옥토북스 메인 배너 이미지"/>
                   <div class="list-item-txt">
-                    <h4>옥토북스</h4>
+                    <div class="list-item-tit">
+                      <h4>옥토북스</h4>
+                      <p>'2021</p>
+                    </div>
+                    <div class="list-item-info">
+                      <p>Cafe24 / jQuery</p>
+                      <p>@에스페셜디자인/동양미디어</p>
+                    </div>
                   </div>
                 </a>
               </div>
@@ -136,12 +215,11 @@
         </div>
         <!-- 디자인 영역 -->
         <div class="disign">
-          <div class="disign-tit">
-            <h4>Work.<span>Design</span></h4>
-            <p>등 있은 것 1,110,000원 터득하다. "실거래를 않아 그, 있는 
-              등 일제의 규약의 방기하다" 득표다 지방이, 않는지, 병원으로 요양한
-              이웃이 반영하다. 도발도 개발을 권고하는 민주화의 상수원이 없다. 
-              사랑을 가시적은 22개 전체에서 여당이다 말할까.</p>
+          <div class="disign-info">
+            <p class="disign-tit"><span>Work . </span>Design</p>
+            <p class="disign-tit-sub">SNS 피드 이미지부터 이벤트 및 제품 상세페이지까지 다양한 콘텐츠의 디자인을 경험했습니다.<br />
+              프로젝트에서 브랜드 메시지를 시각적으로 전달하는 것에 주력했습니다.
+            </p>
           </div>
           <div class="disign-list-wrap">
             <ul id="list_ul" class="disign-list">
@@ -173,6 +251,16 @@
                 </a>
                 <div class="img-wrap">
                   <img src="img/event_hover.jpg" alt="이벤트 페이지 이미지">
+                </div>
+              </li>
+              <li class="disign-item">
+                <a href="html/design_event.html">
+                  <span class="disign-item-name">Card News</span>
+                  <span class="disign-item-sub">카드뉴스</span>
+                  <img src="../img/ico_arrow.png" alt="화살표 아이콘"/>
+                </a>
+                <div class="img-wrap">
+                  <img src="img/card_hover.jpg" alt="이벤트 페이지 이미지">
                 </div>
               </li>
             </ul>
