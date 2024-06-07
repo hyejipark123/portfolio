@@ -4,25 +4,44 @@
 $black: #000;
 $primary_color: #000;
 $secondary_color: #d9d9d9;
+$gray: #bbb;
+$dark-gray: #666;
 
 // 폰트
-$font_size_sm: 16px;
-$font-size_md: 32px;
-$base-font: 'Noto Sans KR', sans-serif;
+$font_size_xs: 16px;
+$font_size_sm: 18px;
+$font_size_md: 26px;
+$font_size_lg: 32px;
+$font_size_xl: 46px;
+$base-font: "Pretendard Variable", Pretendard, sans-serif;
+$en-font: "Lato", sans-serif;
+$sub-font: 'GhanaChocolate', sans-serif;
+
+@mixin textXs{
+    font-size: $font_size_xs;
+    letter-spacing: -0.05rem;
+    line-height: 1.4;
+}
+
+
+@mixin textSm{
+    font-size: $font_size_sm;
+    letter-spacing: -0.05rem;
+    line-height: 1.4;
+}
+
 
 // 여백
-$header-height: 7rem;
-$pd-8: 2rem;
-$pd-14: 3.5rem;
+$spacing-xs: 1rem;
+$spacing-sm: 2rem;
+$spacing-md: 3.5rem;
+$spacing-lg: 7rem;
+$spacing-xl: 10rem;
+// $spacing-xxl: 40px;
+// $spacing-xxxl: 48px;
+
 
 @mixin flexBox($align) {
     display: flex;
     align-items: $align;
-}
-
-@font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
 }
