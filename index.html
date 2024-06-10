@@ -7,11 +7,12 @@
     <title>Park Hyeji Portfolio</title>
     <link rel="shortcut icon" href="img/favicon.ico" />
 
-    <!-- 구글폰트 -->
+    <!-- 폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://webfontworld.github.io/lotte/GhanaChocolate.css" rel="stylesheet">
     
@@ -32,18 +33,21 @@
     <header id="header" class="header">
       <div class="header__inner" data-color="white">
         <nav class="main-menu">
+          <div class="logo">
+            <a href="/"><span>Park</span>hyeji</a>
+          </div>
           <ul class="main-menu-container">
             <li class="main-menu-item">
-              <a href="/"><span>01/Home</span></a>
+              <a href="/"><span class="menu-name">01/Home</span></a>
             </li>
             <li class="main-menu-item">
-              <a href="/#about"><span>02/About</span></a>
+              <a href="/#about"><span class="menu-name">02/About</span></a>
             </li>
             <li class="main-menu-item">
-              <a href="/#work"><span>03/Work</span></a>
+              <a href="/#work"><span class="menu-name">03/Work</span></a>
             </li>
             <li class="main-menu-item">
-              <a href="/#contact"><span>04/Contact</span></a>
+              <a href="/#contact"><span class="menu-name">04/Contact</span></a>
             </li>
           </ul>
         </nav>
@@ -53,35 +57,50 @@
     <!-- content -->
     <div id="content">
       <main id="home" class="home">
-
+        <div class="home-tit">
+          <h2>Interactive</h2>
+          <h2>Markup</h2>
+          <h2>Ui Develper</h2>
+          <h2>Web Publisher</h2>
+        </div>
+        <div class="home-icon-wrap">
+          <div class="home-icon rainbow"></div>
+          <div class="home-icon heart"></div>
+          <div class="home-icon greet"></div>
+        </div>
+        <!-- <div class="home-deco">
+          <img src="../img/main/main-deco-01.svg" alt="메인 데코 아이콘" class="home-deco-img img-01 rotate-on-mouse" />
+          <img src="../img/main/main-deco-02.svg" alt="메인 데코 아이콘" class="rotate-on-mouse" />
+          <img src="../img/main/main-deco-03.png" alt="메인 데코 아이콘" class="home-deco-img img-03 rotate-on-mouse" />
+        </div> -->
       </main>
       <!-- 02.about -->
       <section id="about" class="about">
         <div class="about-desc">
-          <h2 class="about-desc-tit">안녕하세요!<br /><span>디테일에 강한</span> 웹 퍼블리셔<br />박혜지입니다.</h2> 
+          <h2 class="about-desc-tit">안녕하세요!<br /><span class="underline">디테일에 강한</span> 웹 퍼블리셔<br />박혜지입니다.</h2> 
           <div class="about-desc-sub">
-            <p>모든 프로젝트에서 작은 부분까지 신경 쓰며, 완벽한 웹 페이지를 구현하는 것을 목표로 합니다.<br>
-              픽셀 하나까지 놓치지 않고 디자인과 코드를 최적화하여, 높은 품질의 웹사이트를 제공하며<br>
-              HTML, CSS, JavaScript 등 다양한 기술을 활용해 섬세한 작업을 진행합니다.<br>
+            <p>모든 프로젝트에서 <b>작은 부분까지 신경 쓰며, 완벽한 웹 페이지</b>를 구현하는 것을 목표로 합니다.<br>
+              픽셀 하나까지 놓치지 않고 <b>디자인과 코드를 최적화</b>하여, 높은 품질의 웹사이트를 제공하며<br>
+              <b>HTML, CSS, JavaScript 등 다양한 기술을 활용해 섬세한 작업</b>을 진행합니다.<br>
             </p>
             <p>
               또한 저는 이 일을 함으로써 나아갈 힘과 원동력이 생긴다고 생각합니다.<br>
-              프로세스와 소통에 긍정적인 태도를 가지고, 좋은 에너지를 공유하고,<br>
+              <b>프로세스와 소통에 긍정적인 태도</b>를 가지고, <b>좋은 에너지를 공유</b>하고,<br>
               다양한 시도를 하고 실패와 성공을 통해 얻은 경험들로 더 나은 퍼블리셔로 성장하고 싶습니다.<br>
-              현재에 만족하지 않는 퍼블리셔가 되기 위해 끊임없이 새로운 것에 도전하려 노력하고 있습니다. 
+              현재에 만족하지 않는 퍼블리셔가 되기 위해 <b>끊임없이 새로운 것에 도전하려 노력</b>하고 있습니다. 
             </p>
           </div>
-          <a href="./html/about.html">자기소개 더보기 →</a>
+          <a href="https://my.surfit.io/w/122890248" target="_blank">자기소개 더보기 →</a>
         </div>
         <div class="about-img">
           <img src="../img/self-img.jpg" alt="프로필 이미지" class="about-img-profile"/>
-          <div class="about-deco">
+          <!-- <div class="about-deco">
             <img src="../img/main/icon_html.png" alt="html 로고" class="about-deco-img html"/>
             <img src="../img/main/icon_css.png" alt="css 로고" class="about-deco-img css"/>
             <img src="../img/main/icon_figma.png" alt="github 로고" class="about-deco-img figma"/>
             <img src="../img/main/icon_github.png" alt="github 로고" class="about-deco-img github"/>
             <img src="../img/main/icon_js.png" alt="JavaScript 로고" class="about-deco-img js"/>
-          </div>
+          </div> -->
         </div>
       </section>
       <!-- 03.work -->
@@ -93,7 +112,7 @@
             <div class="work-inside-left">
               <div class="work-inside-left--controls">
                 <p class="tit">Work .</p>
-                <p class="sub">Web Publishing</p>
+                <p class="sub">(Web Publishing)</p>
               </div>
             </div>
             <!-- 우측_contents -->
@@ -216,7 +235,7 @@
         <!-- 디자인 영역 -->
         <div class="disign">
           <div class="disign-info">
-            <p class="disign-tit"><span>Work . </span>Design</p>
+            <p class="disign-tit"><span>Work . </span>(Design)</p>
             <p class="disign-tit-sub">SNS 피드 이미지부터 이벤트 및 제품 상세페이지까지 다양한 콘텐츠의 디자인을 경험했습니다.<br />
               프로젝트에서 브랜드 메시지를 시각적으로 전달하는 것에 주력했습니다.
             </p>
@@ -227,7 +246,7 @@
                 <a href="html/design_sns.html">
                   <span class="disign-item-name">SNS Contents</span>
                   <span class="disign-item-sub">SNS 피드 및 광고 이미지</span>
-                  <img src="../img/ico_arrow.png" alt="화살표 아이콘"/>
+                  <button type="button" class="arrow"></button>
                 </a>
                 <div class="img-wrap">
                   <img src="img/sns_hover_img.jpg" alt="sns 컨텐츠 이미지">
@@ -237,7 +256,7 @@
                 <a href="html/design_product.html">
                   <span class="disign-item-name">Detail Page</span>
                   <span class="disign-item-sub">상품 상세페이지</span>
-                  <img src="../img/ico_arrow.png" alt="화살표 아이콘"/>
+                  <button type="button" class="arrow"></button>
                 </a>
                 <div class="img-wrap">
                   <img src="img/detail_hover_img.jpg" alt="상세페이지 이미지">
@@ -247,7 +266,7 @@
                 <a href="html/design_event.html">
                   <span class="disign-item-name">Event</span>
                   <span class="disign-item-sub">이벤트 페이지</span>
-                  <img src="../img/ico_arrow.png" alt="화살표 아이콘"/>
+                  <button type="button" class="arrow"></button>
                 </a>
                 <div class="img-wrap">
                   <img src="img/event_hover.jpg" alt="이벤트 페이지 이미지">
@@ -257,7 +276,7 @@
                 <a href="html/design_event.html">
                   <span class="disign-item-name">Card News</span>
                   <span class="disign-item-sub">카드뉴스</span>
-                  <img src="../img/ico_arrow.png" alt="화살표 아이콘"/>
+                  <button type="button" class="arrow"></button>
                 </a>
                 <div class="img-wrap">
                   <img src="img/card_hover.jpg" alt="이벤트 페이지 이미지">
@@ -268,34 +287,36 @@
         </div>
       </section>
       <!-- 04.contact-->
-      <!-- <section id="contact"></section> -->
-
-     </div>
-      <!-- footer -->
-      <footer>
-        <div id="footer" class="footer_wrap">
-          <div class="contact">
-            <div>
-              <a href="mailto:gpwlchlr5@naver.com">gpwlchlr5@naver.com</a>
-            </div>
-          </div>
-          <div class="bottom-wrap d-flex">
-            <div class="menu d-flex">
-              <div class="menu-list"><a href="index.html">Home</a></div>
-              <div class="menu-list"><a href="html/about.html">About</a></div>
-              <div class="menu-list">
-                <a href="html/project.html">Project</a>
-              </div>
-            </div>
-            <div class="bottom-txt">
-              <p>Thanks for reading!</p>
-            </div>
-            <div class="bottom-txt">
-              <p>© 2024</p>
-            </div>
-          </div>
+      <section id="contact" class="contact">
+        <div class="contact-tit">
+          <p>최척화된 웹 퍼블리셔 박혜지입니다. 감사합니다!</p>
+          <h2>THANK YOU<br />FOR WATCHING</h2>
         </div>
-      </footer>
+        <div class="contact-info">
+          <div class="contact-info-wrap">
+            <div class="contact-info-list">
+              <img src="../img/main/icon_talk.svg" />
+              <p class="name">TALK</p>
+              <p>gpwl1110</p>
+            </div>
+            <div class="contact-info-list">
+              <img src="../img/main/icon_phone.svg" />
+              <p class="name">PHONE</p>
+              <p>010.7644.8992</p>
+            </div>
+            <div class="contact-info-list">
+              <img src="../img/main/icon_email.svg" />
+              <p class="name">E-MAIL</p>
+              <p>gpwlchlr5@naver.com</p>
+            </div>
+          </div>
+          <p class="copylight">Copyright © 2024 PARK HYE JI. ALL Rights Reserved.</p>
+        </div>
+        <div class="contact-img">
+          <img src="../img/main/contact-round-text.png" alt="라운드 텍스트"/>
+        </div>
+      </section>
+     </div>
     </div>
   </body>
   <script>
