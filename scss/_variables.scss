@@ -6,6 +6,7 @@ $primary_color: #000;
 $secondary_color: #d9d9d9;
 $gray: #bbb;
 $dark-gray: #666;
+$white: #fff;
 
 // 폰트
 $font_size_xs: 16px;
@@ -15,7 +16,8 @@ $font_size_lg: 32px;
 $font_size_xl: 46px;
 $base-font: "Pretendard Variable", Pretendard, sans-serif;
 $en-font: "Lato", sans-serif;
-$sub-font: 'GhanaChocolate', sans-serif;
+$sub-font: "GhanaChocolate", sans-serif;
+$en-tit-font: "Poppins", sans-serif;
 
 @mixin textXs{
     font-size: $font_size_xs;
