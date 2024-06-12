@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   // a 태그 마우스오버 시 dot 클래스명 추가
-  document.querySelectorAll('a, .list-item').forEach(function(link) {
+  document.querySelectorAll('a, .list-item, .view-info-more').forEach(function(link) {
     link.addEventListener('mouseover', function() {
       dot.classList.add('over');
     });
