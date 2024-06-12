@@ -103,14 +103,13 @@ $(function(){
   }).filter(':eq(0)').click();
 });
 
+// 모달 영역
 document.addEventListener('DOMContentLoaded', function() {
-  // Get modal elements
   var modal = document.getElementById("subModal");
   var span = document.getElementsByClassName("close")[0];
   var modalBody = document.getElementById("modalBody");
   var items = document.querySelectorAll(".open-modal");
 
-  // Open modal when any button is clicked
   items.forEach(item => {
       item.onclick = function() {
           var target = this.getAttribute('data-target');
@@ -124,13 +123,12 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   });
 
-  // Close modal when 'x' is clicked
+  // 닫기 버튼
   span.onclick = function() {
       modal.style.display = "none";
       document.body.classList.remove('open');
   }
-
-  // Close modal when clicking outside of the modal content
+  // modal 영역 외 배경 클릭 시 닫힘
   window.onclick = function(event) {
       if (event.target == modal) {
           modal.style.display = "none";

@@ -82,6 +82,18 @@ button {
   height: 50px;
 }
 
+@font-face {
+  font-family: "YClover-Bold";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/YClover-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Handletter";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/naverfont_05@1.0/Handletter.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   width: 100%;
   height: 100%;
@@ -117,7 +129,7 @@ body.open .header {
   left: 0;
   right: 0;
   top: 0;
-  height: 60px;
+  height: 70px;
   z-index: 20;
   min-width: 1260px;
   background-color: transparent;
@@ -141,8 +153,10 @@ body.open .header {
   width: 100%;
   padding: 0 3.5rem;
 }
-.header .main-menu .logo {
+.header .main-menu .logo a {
   color: #fff;
+  font-size: 26px;
+  font-family: "Handletter", sans-serif;
 }
 .header .main-menu-container {
   display: flex;
@@ -177,7 +191,8 @@ body.open .header {
 .header.nav-bg .main-menu-item::after {
   background: #000;
 }
-.header.nav-bg .menu-name {
+.header.nav-bg .menu-name,
+.header.nav-bg .logo > a {
   color: #000;
 }
 
@@ -529,13 +544,13 @@ body.open .header {
   background: url("../img/icon_arrow_black.png") no-repeat center;
   background-size: 20px;
 }
-.disign-item a {
+.disign-item-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 2rem 2rem 1rem;
 }
-.disign-item a .arrow {
+.disign-item-box .arrow {
   background: url("../img/icon_arrow_gray.png") no-repeat center;
   width: 30px;
   height: 30px;
@@ -684,15 +699,6 @@ body.open .header {
   padding-right: 6px;
   color: #f05735;
 }
-.view-tit-right p:first-of-type::after {
-  content: "";
-  width: 1px;
-  height: 16px;
-  background-color: #666;
-  display: inline-block;
-  margin-left: 10px;
-  vertical-align: middle;
-}
 .view-tit-sub {
   color: #bbb;
   font-size: 18px;
@@ -705,6 +711,7 @@ body.open .header {
   font-size: 18px;
   letter-spacing: -0.05rem;
   line-height: 1.4;
+  line-height: 1.6;
 }
 .view-info-more {
   display: flex;
@@ -746,9 +753,75 @@ body.open .header {
   background-color: #f3f4f6;
   margin-bottom: 2rem;
 }
+.view-content-box:has(.img-03) {
+  background-color: #000;
+}
 .view-content img {
   max-width: 100%;
   display: block;
+}
+.view-content .half {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.view.cdp .view-tit-right span {
+  color: #403cff;
+}
+.view.starhorse .view-tit-right span {
+  color: #233cee;
+}
+.view.starhorse .half .view-content-box {
+  background-color: #edf6fc;
+}
+.view.sweat .view-tit-right span {
+  color: #55d542;
+}
+.view.sweat .img-01 {
+  max-width: calc(100% + 2px);
+}
+.view.sweat .img-05 {
+  background-color: #000;
+  padding: 1rem 0;
+}
+.view.somayoga .view-tit-right span {
+  color: #42705c;
+}
+.view.somayoga .img-01 {
+  padding: 1rem 0;
+}
+.view.simplica .view-tit-right span {
+  color: #D4C4B7;
+}
+.view.mamapick .view-tit-right span {
+  color: #ffd600;
+}
+.view.mamapick .img-01 {
+  max-width: calc(100% + 2px);
+}
+.view.octobooks .view-tit-right span {
+  color: #37b3d7;
+}
+.view.octobooks .img-01 {
+  max-width: calc(100% + 2px);
+}
+.view.octobooks .half .view-content-box {
+  background-color: #e8f6ff;
+}
+.view.sns .view-tit-right span {
+  color: #ff8053;
+}
+.view.product .view-tit-right span {
+  color: #10a46e;
+}
+.view.event .view-tit-right span {
+  color: #5c5db9;
+}
+.view.event .img-06 {
+  padding: 2rem;
+}
+.view.card .view-tit-right span {
+  color: #ef5fa4;
 }
 
 .close {

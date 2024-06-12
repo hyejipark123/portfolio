@@ -37,7 +37,7 @@ body {
     left: 0;
     right: 0;
     top: 0;
-    height: 60px;
+    height: 70px;
     z-index: 20;
     min-width: 1260px;
     background-color: transparent;
@@ -59,7 +59,12 @@ body {
         width: 100%;
         padding: 0 $spacing-md;
         .logo {
-            color: $white;
+            a {
+                color: $white;
+                font-size: $font-size_md;
+                font-family: 'Handletter', sans-serif;
+            }
+     
         }
         &-container {
             @include flexBox(center);
@@ -96,7 +101,8 @@ body {
                 background: $black;
             }
         }
-        .menu-name{
+        .menu-name ,
+        .logo > a {
             color: $black;
         }
       }
@@ -450,7 +456,7 @@ body {
                 background-size: 20px;
             }
           }
-        a {
+        &-box {
             @include flexBox(center);
             justify-content: space-between;
             padding: $spacing-sm $spacing-sm 1rem;
@@ -605,17 +611,6 @@ body {
                     padding-right: 6px;
                     color: #f05735;
                 }
-                &:first-of-type {
-                    &::after {
-                        content: "";
-                        width: 1px;
-                        height: 16px;
-                        background-color: $dark-gray;
-                        display: inline-block;
-                        margin-left: 10px;
-                        vertical-align: middle;
-                    }
-                }
             }
         }
         &-sub {
@@ -628,6 +623,7 @@ body {
         margin: $spacing-md 0;
         &-sub {
            @include textSm;
+           line-height: 1.6;
         }
         &-more{
             @include flexBox(center);
@@ -668,11 +664,109 @@ body {
             overflow: hidden;
             background-color: #f3f4f6;
             margin-bottom: $spacing-sm;
+            &:has(.img-03) {
+                background-color: $black;
+            }
         }
         img {
             max-width: 100%;
             display: block;
-            
+        }
+        .half {
+            @include flexBox(center);
+            gap: $spacing-sm;
+        }
+    }
+    // cpd
+    &.cdp {
+        .view-tit-right span {
+            color: #403cff;
+        }
+    }
+    // 스타홀스
+    &.starhorse {
+        .view-tit-right span {
+            color: #233cee;
+        }
+        .half {
+            .view-content-box {
+                background-color: #edf6fc;
+            }
+        }
+    }
+    // 스웨트
+    &.sweat{
+        .view-tit-right span {
+            color: #55d542;
+        }
+        .img-01{
+            max-width: calc(100% + 2px);
+        }
+        .img-05 { 
+            background-color: $black;
+            padding: $spacing-xs 0;
+        }
+    }
+    // 소마요가
+    &.somayoga {
+        .view-tit-right span {
+            color: #42705c;
+        }
+        .img-01{
+            padding: $spacing-xs 0;
+        }
+    }
+    // 심플리카
+    &.simplica {
+        .view-tit-right span {
+            color: #D4C4B7;
+        }
+    }
+    // 마마픽
+    &.mamapick {
+        .view-tit-right span {
+            color: #ffd600;
+        }
+        .img-01{
+            max-width: calc(100% + 2px);
+        }
+    }
+    // 옥토북스 영역
+    &.octobooks {
+        .view-tit-right span{ 
+            color: #37b3d7;
+        }
+        .img-01{
+            max-width: calc(100% + 2px);
+        }
+        .half {
+            .view-content-box {
+                background-color: #e8f6ff;
+            }
+        }
+    }
+    // 디자인
+    &.sns {
+        .view-tit-right span {
+            color: #ff8053;
+        }
+    }
+    &.product {
+        .view-tit-right span {
+            color: #10a46e;
+        }
+    }
+    &.event {
+        .view-tit-right span {
+            color: #5c5db9;
+        }
+        .img-06 {
+            padding: $spacing-sm;
+        }
+    }
+    &.card {
+        .view-tit-right span {
+            color: #ef5fa4;
         }
     }
 }
