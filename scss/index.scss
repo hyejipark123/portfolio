@@ -460,6 +460,7 @@ body {
             @include flexBox(center);
             justify-content: space-between;
             padding: $spacing-sm $spacing-sm 1rem;
+            cursor: pointer;
             .arrow {
                 background: url('../img/icon_arrow_gray.png')no-repeat center;
                 width: 30px;

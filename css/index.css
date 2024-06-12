@@ -549,6 +549,7 @@ body.open .header {
   align-items: center;
   justify-content: space-between;
   padding: 2rem 2rem 1rem;
+  cursor: pointer;
 }
 .disign-item-box .arrow {
   background: url("../img/icon_arrow_gray.png") no-repeat center;
