@@ -17,9 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://webfontworld.github.io/lotte/GhanaChocolate.css" rel="stylesheet">
     
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" href="css/animate.css" />  
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -27,7 +25,7 @@
     <script src="js/wow.min.js"></script>
   </head>
   <body>
-    <!-- 마우스 커서 -->
+    <!-- dot -->
   <div class="dot"></div>
   <div id="wrap">
     <!-- header -->
@@ -91,7 +89,10 @@
               현재에 만족하지 않는 퍼블리셔가 되기 위해 <b>끊임없이 새로운 것에 도전하려 노력</b>하고 있습니다. 
             </p>
           </div>
-          <a href="https://opaque-roarer-11a.notion.site/7e45ea99f0df40d8825ebd4c5e1413ca?pvs=4" target="_blank">자기소개 더보기 →</a>
+          <a href="https://opaque-roarer-11a.notion.site/7e45ea99f0df40d8825ebd4c5e1413ca?pvs=4" class="about-more" target="_blank">
+            자기소개 더보기
+            <span class="more-arrow"></span>
+          </a>
         </div>
         <div class="about-img">
           <img src="img/self-img.jpg" alt="프로필 이미지" class="about-img-profile"/>
@@ -119,7 +120,7 @@
             <!-- 우측_contents -->
             <div class="work-contents">
               <div class="list">
-                <a href="html/homepage-trial.html" class="list-item">
+                <div class="list-item open-modal" data-target="html/homepage-trial.html">
                   <img src="img/homepageTrial-h.jpg" alt="체험하기 메인 배너 이미지"/>
                   <div class="list-item-txt">
                     <div class="list-item-tit">
@@ -131,7 +132,7 @@
                       <p>@티오더</p>
                     </div>
                   </div>
-                </a>
+                </div>
                 <a href="#" class="list-item">           
                     <img src="img/cdp-h.png" alt="cdp 메인 배너 이미지"/>
                     <div class="list-item-txt">
@@ -216,7 +217,7 @@
                     </div>
                   </div>
                 </a>
-                <a href="html/octobooks.html" class="list-item">
+                <div class="list-item open-modal" data-target="html/octobooks.html">
                   <img src="img/octobooks-h.jpg" alt="옥토북스 메인 배너 이미지"/>
                   <div class="list-item-txt">
                     <div class="list-item-tit">
@@ -228,7 +229,7 @@
                       <p>@에스페셜디자인/동양미디어</p>
                     </div>
                   </div>
-                </a>
+                </div>
               </div>
             </div>
           </div>
@@ -319,6 +320,12 @@
       </section>
      </div>
     </div>
+
+    <!-- 프로젝트 서브소개페이지 모달 -->
+    <div id="subModal" class="modal">
+      <span class="close">&times;</span>
+      <div id="modalBody" class="modal-container"></div>
+  </div>
   </body>
   <script>
     const div_wraps = document.querySelectorAll('.img-wrap');
@@ -340,6 +347,18 @@
       li_img.addEventListener('mouseleave', function(){
         li_img.querySelector('.img-wrap').style.visibility = 'hidden';
       });
+    });
+
+    
+    // 서브 소개페이지 스크롤 감지
+    var modalContainer = document.querySelector('.modal-container');
+
+    modalContainer.addEventListener('scroll', function() {
+        if (modalContainer.scrollTop > 60) {
+            modalContainer.classList.add('scroll');
+        } else {
+            modalContainer.classList.remove('scroll');
+        }
     });
   </script>
 </html>

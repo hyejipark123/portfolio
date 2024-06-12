@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   // a 태그 마우스오버 시 dot 클래스명 추가
-  document.querySelectorAll('a').forEach(function(link) {
+  document.querySelectorAll('a, .list-item').forEach(function(link) {
     link.addEventListener('mouseover', function() {
       dot.classList.add('over');
     });
@@ -103,3 +103,38 @@ $(function(){
   }).filter(':eq(0)').click();
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  // Get modal elements
+  var modal = document.getElementById("subModal");
+  var span = document.getElementsByClassName("close")[0];
+  var modalBody = document.getElementById("modalBody");
+  var items = document.querySelectorAll(".open-modal");
+
+  // Open modal when any button is clicked
+  items.forEach(item => {
+      item.onclick = function() {
+          var target = this.getAttribute('data-target');
+          fetch(target)
+              .then(response => response.text())
+              .then(data => {
+                  modalBody.innerHTML = data;
+                  modal.style.display = "block";
+                  document.body.classList.add('open');
+              })
+      }
+  });
+
+  // Close modal when 'x' is clicked
+  span.onclick = function() {
+      modal.style.display = "none";
+      document.body.classList.remove('open');
+  }
+
+  // Close modal when clicking outside of the modal content
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+          document.body.classList.remove('open');
+      }
+  }
+});
