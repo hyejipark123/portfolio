@@ -1,4 +1,18 @@
 @charset "UTF-8";
+/*반응형 화면 크기*/
+/*반응형, 브라우저 크기가 768이상, 1023px 이하일때*/
+@font-face {
+  font-family: "YClover-Bold";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/YClover-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Handletter";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/naverfont_05@1.0/Handletter.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -80,6 +94,11 @@ button {
 .dot.over {
   width: 50px;
   height: 50px;
+}
+@media (max-width: 767px) {
+  .dot {
+    display: none;
+  }
 }
 
 /*반응형 화면 크기*/
@@ -197,6 +216,30 @@ body.open .header {
 .header.nav-bg .logo > a {
   color: #242424;
 }
+@media (max-width: 767px) {
+  .header {
+    position: absolute;
+    width: 100%;
+    min-width: auto;
+  }
+  .header .main-menu {
+    display: flex;
+    align-items: start;
+    padding: 0 1.5rem;
+  }
+  .header .main-menu-container {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: end;
+  }
+  .header .main-menu-item {
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .header.nav-bg {
+    display: none;
+  }
+}
 
 .home {
   width: 100%;
@@ -233,10 +276,11 @@ body.open .header {
 }
 @media (max-width: 767px) {
   .home-tit {
-    padding: 16rem 1.5rem 0;
+    padding: 14rem 1.5rem 0;
   }
   .home-tit h2 {
-    font-size: 60px;
+    font-size: 48px;
+    line-height: 1.8;
   }
 }
 .home-deco-img {
@@ -294,6 +338,29 @@ body.open .header {
 .home-icon.greet:hover {
   background: url("../img/main/emoji_greet_hover.gif") no-repeat center #fff;
   background-size: 42px;
+}
+@media (max-width: 767px) {
+  .home-icon {
+    width: 50px;
+    height: 50px;
+  }
+  .home-icon.rainbow {
+    background: url("../img/main/emoji_rainbow_hover.gif") no-repeat 10px 8px #fff;
+    background-size: 36px;
+    top: 35%;
+    left: 53%;
+  }
+  .home-icon.rainbow:hover {
+    background-size: 36px;
+  }
+  .home-icon.heart {
+    background: url("../img/main/emoji_heart_hover.gif") no-repeat center #fff;
+    background-size: 36px;
+    left: 60%;
+  }
+  .home-icon.heart:hover {
+    background-size: 36px;
+  }
 }
 
 .about {
@@ -449,6 +516,14 @@ body.open .header {
   color: #bbb;
   font-family: "Lato", sans-serif;
   font-size: 20px;
+}
+@media (max-width: 767px) {
+  .work-inside {
+    flex-direction: column;
+  }
+  .work-inside-left {
+    min-height: auto;
+  }
 }
 .work-contents {
   width: 100%;
