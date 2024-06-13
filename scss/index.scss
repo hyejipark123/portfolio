@@ -106,7 +106,26 @@ body {
             color: $black;
         }
     }
-   
+    @include mobile {
+        position: absolute;
+        width: 100%;
+        min-width: auto;
+        .main-menu {
+            @include flexBox(start);
+            padding: 0 1.5rem;
+            &-container {
+                flex-direction: column;
+                gap: 1rem;
+                align-items: end;
+            }
+            &-item {
+                width: max-content;
+            }
+        }
+        &.nav-bg {
+            display: none;
+        }
+    }
 }
 
 .home {
@@ -141,9 +160,10 @@ body {
             }
         }
         @include mobile { 
-            padding: 16rem 1.5rem 0;
+            padding: 14rem 1.5rem 0;
             h2 {
-                font-size: 60px;
+                font-size: 48px;
+                line-height: 1.8;
             }
         }
       
@@ -202,6 +222,28 @@ body {
             &:hover{
                 background: url('../img/main/emoji_greet_hover.gif') no-repeat center #fff;
                 background-size: 42px;
+            }
+        }
+        @include mobile {
+            width: 50px;
+            height: 50px;
+           
+            &.rainbow {       
+                background: url('../img/main/emoji_rainbow_hover.gif') no-repeat 10px 8px #fff;
+                background-size: 36px;
+                top: 35%;
+                left: 53%;
+                &:hover {
+                    background-size: 36px;
+                }
+            }
+            &.heart {
+                background: url('../img/main/emoji_heart_hover.gif') no-repeat center #fff;
+                background-size: 36px;
+                left: 60%;
+                &:hover {
+                    background-size: 36px;
+                }
             }
         }
     }
@@ -362,6 +404,12 @@ body {
               }
             }
           }
+        }
+        @include mobile { 
+           flex-direction: column;
+           &-left {
+            min-height: auto;
+           }
         }
     }
     &-contents{
