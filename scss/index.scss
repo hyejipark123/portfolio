@@ -353,7 +353,7 @@ body {
     @include mobile { 
        flex-direction: column-reverse;
        margin: 0;
-       padding: 3rem;
+       padding: 3rem 1.5rem;
        &-img {
         margin-right: 0;
         width: 100%;
@@ -409,7 +409,19 @@ body {
            flex-direction: column;
            &-left {
             min-height: auto;
+            width: 100%;
+            &--controls {
+                p{
+                    &.tit {
+                        font-size: 28px;
+                    }
+                    &.sub {
+                        font-size: 18px;
+                    }
+                }
+            }
            }
+           
         }
     }
     &-contents{
@@ -458,6 +470,28 @@ body {
                 }
             }
         }
+        @include mobile { 
+            border-left: 0;
+            .list {
+                flex-direction: column;
+                padding: 0;
+                margin-bottom: 80px;
+                gap: 80px;
+                &-item {
+                    &:not(:first-child){
+                        margin-top: 0px;
+                    }
+                    &-tit {
+                        h4 {
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include mobile { 
+        padding: 0 1.5rem;
     }
 }
 .disign{
@@ -534,9 +568,10 @@ body {
             }
           }
         &-box {
-            @include flexBox(center);
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 1fr 1fr 20px;
             padding: $spacing-sm $spacing-sm 1rem;
+            align-items: center;
             cursor: pointer;
             .arrow {
                 background: url('../img/icon_arrow_gray.png')no-repeat center;
@@ -554,6 +589,45 @@ body {
                 width: 430px;
                 height: 300px;
             }
+        }
+    }
+    @include mobile { 
+        margin: $spacing-lg 0;
+        &-info {
+            flex-direction: column;
+            gap: 20px;
+        }
+        &-tit {
+            font-size: 18px;
+            span {
+                font-size: 28px;
+            }
+            &-sub {
+                font-size: 16px;
+            }
+        }
+        &-item {
+            &-box {
+                span {
+                    grid-column: 1 / -1;
+                    &:last-of-type {
+                        margin-top: $spacing-xs;
+                    }
+                }
+                .arrow {
+                    grid-column: 2 / 3;
+                    grid-row: 1 / span 2; 
+                    justify-self: end; 
+                    align-self: start;
+                }
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto 20px;
+                padding: 1.3rem $spacing-xs 0.5rem;
+                margin-bottom: -16px;
+            }
+        }
+        .img-wrap{
+            display: none;
         }
     }
 }
