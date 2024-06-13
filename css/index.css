@@ -82,6 +82,8 @@ button {
   height: 50px;
 }
 
+/*반응형 화면 크기*/
+/*반응형, 브라우저 크기가 768이상, 1023px 이하일때*/
 @font-face {
   font-family: "YClover-Bold";
   src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/YClover-Bold.woff2") format("woff2");
@@ -228,6 +230,14 @@ body.open .header {
 }
 .home-tit h2:last-of-type::after {
   display: none;
+}
+@media (max-width: 767px) {
+  .home-tit {
+    padding: 16rem 1.5rem 0;
+  }
+  .home-tit h2 {
+    font-size: 60px;
+  }
 }
 .home-deco-img {
   position: absolute;
@@ -386,6 +396,25 @@ body.open .header {
 .about-more:hover .more-arrow {
   background: url("../img/icon_right_arrow_hover.gif") no-repeat center;
   background-size: 22px;
+}
+@media (max-width: 767px) {
+  .about {
+    flex-direction: column-reverse;
+    margin: 0;
+    padding: 3rem;
+  }
+  .about-img {
+    margin-right: 0;
+    width: 100%;
+  }
+  .about-desc-tit {
+    font-size: 2rem;
+    margin-bottom: 0;
+    margin-top: 1rem;
+  }
+  .about-desc-sub p {
+    font-size: 16px;
+  }
 }
 
 .work {
