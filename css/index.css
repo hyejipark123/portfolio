@@ -468,7 +468,7 @@ body.open .header {
   .about {
     flex-direction: column-reverse;
     margin: 0;
-    padding: 3rem;
+    padding: 3rem 1.5rem;
   }
   .about-img {
     margin-right: 0;
@@ -523,6 +523,13 @@ body.open .header {
   }
   .work-inside-left {
     min-height: auto;
+    width: 100%;
+  }
+  .work-inside-left--controls p.tit {
+    font-size: 28px;
+  }
+  .work-inside-left--controls p.sub {
+    font-size: 18px;
   }
 }
 .work-contents {
@@ -571,6 +578,28 @@ body.open .header {
 }
 .work-contents .list-item-info p:first-child {
   font-family: "Lato", sans-serif;
+}
+@media (max-width: 767px) {
+  .work-contents {
+    border-left: 0;
+  }
+  .work-contents .list {
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 80px;
+    gap: 80px;
+  }
+  .work-contents .list-item:not(:first-child) {
+    margin-top: 0px;
+  }
+  .work-contents .list-item-tit h4 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .work {
+    padding: 0 1.5rem;
+  }
 }
 
 .disign {
@@ -649,10 +678,10 @@ body.open .header {
   background-size: 20px;
 }
 .disign-item-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 20px;
   padding: 2rem 2rem 1rem;
+  align-items: center;
   cursor: pointer;
 }
 .disign-item-box .arrow {
@@ -674,6 +703,45 @@ body.open .header {
   opacity: 0.85;
   width: 430px;
   height: 300px;
+}
+@media (max-width: 767px) {
+  .disign {
+    margin: 7rem 0;
+  }
+  .disign-info {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .disign-tit {
+    font-size: 18px;
+  }
+  .disign-tit span {
+    font-size: 28px;
+  }
+  .disign-tit-sub {
+    font-size: 16px;
+  }
+  .disign-item-box {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 20px;
+    padding: 1.3rem 1rem 0.5rem;
+    margin-bottom: -16px;
+  }
+  .disign-item-box span {
+    grid-column: 1/-1;
+  }
+  .disign-item-box span:last-of-type {
+    margin-top: 1rem;
+  }
+  .disign-item-box .arrow {
+    grid-column: 2/3;
+    grid-row: 1/span 2;
+    justify-self: end;
+    align-self: start;
+  }
+  .disign .img-wrap {
+    display: none;
+  }
 }
 
 .contact {
