@@ -120,7 +120,7 @@ body.open .header {
 }
 
 * {
-  color: #000;
+  color: #242424;
   font-family: "Pretendard Variable", Pretendard, sans-serif;
 }
 
@@ -189,11 +189,11 @@ body.open .header {
           backdrop-filter: blur(4px);
 }
 .header.nav-bg .main-menu-item::after {
-  background: #000;
+  background: #242424;
 }
 .header.nav-bg .menu-name,
 .header.nav-bg .logo > a {
-  color: #000;
+  color: #242424;
 }
 
 .home {
@@ -534,7 +534,7 @@ body.open .header {
 }
 .disign-item:hover .disign-item-name,
 .disign-item:hover .disign-item-sub {
-  color: #000;
+  color: #242424;
   font-weight: 600;
 }
 .disign-item:hover::before {
@@ -731,7 +731,7 @@ body.open .header {
   display: block;
   width: 0;
   height: 1.5px;
-  background: #000;
+  background: #242424;
   transition: all 0.5s;
 }
 .view-info-more:hover p {
@@ -755,7 +755,7 @@ body.open .header {
   margin-bottom: 2rem;
 }
 .view-content-box:has(.img-03) {
-  background-color: #000;
+  background-color: #242424;
 }
 .view-content img {
   max-width: 100%;
@@ -782,7 +782,7 @@ body.open .header {
   max-width: calc(100% + 2px);
 }
 .view.sweat .img-05 {
-  background-color: #000;
+  background-color: #242424;
   padding: 1rem 0;
 }
 .view.somayoga .view-tit-right span {
