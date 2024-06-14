@@ -247,10 +247,74 @@ body.open .header {
   background: url("../img/main/main-bg.png") no-repeat center;
   position: relative;
 }
+.home-icon {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.home-icon.rainbow {
+  background: url("../img/main/emoji_rainbow.png") no-repeat center #fff;
+  background-size: 46px;
+  transition: transform 0.1s ease-out;
+  top: -10px;
+  right: 0;
+}
+.home-icon.rainbow:hover {
+  background: url("../img/main/emoji_rainbow_hover.gif") no-repeat 10px 8px #fff;
+  background-size: 46px;
+}
+.home-icon.heart {
+  background: url("../img/main/emoji_heart.png") no-repeat center #fff;
+  background-size: 50px;
+  top: 0;
+  left: 50%;
+}
+.home-icon.heart:hover {
+  background: url("../img/main/emoji_heart_hover.gif") no-repeat center #fff;
+  background-size: 50px;
+}
+.home-icon.greet {
+  background: url("../img/main/emoji_greet.png") no-repeat center #fff;
+  background-size: 42px;
+  right: -50px;
+  top: -10px;
+}
+.home-icon.greet:hover {
+  background: url("../img/main/emoji_greet_hover.gif") no-repeat center #fff;
+  background-size: 42px;
+}
+@media (max-width: 767px) {
+  .home-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .home-icon.rainbow {
+    background: url("../img/main/emoji_rainbow_hover.gif") no-repeat 10px 8px #fff;
+    background-size: 26px;
+  }
+  .home-icon.heart {
+    background: url("../img/main/emoji_heart_hover.gif") no-repeat center #fff;
+    background-size: 26px;
+    top: -12px;
+    left: 46%;
+  }
+  .home-icon.greet {
+    background: url("../img/main/emoji_greet_hover.gif") no-repeat center #fff;
+    background-size: 26px;
+    right: 0;
+  }
+}
 .home-tit {
   padding: 8rem 10rem 0;
 }
 .home-tit h2 {
+  width: -moz-max-content;
+  width: max-content;
   font-size: 100px;
   font-family: "Poppins", sans-serif;
   letter-spacing: -0.05rem;
@@ -258,14 +322,7 @@ body.open .header {
   color: #fff;
   position: relative;
   z-index: 1;
-}
-.home-tit h2 img {
-  vertical-align: sub;
-  margin: 0 -8px 0 -3px;
-}
-.home-tit h2 img.rotate-on-mouse {
   position: relative;
-  transition: transform 0.1s ease-out; /* 부드러운 움직임을 위해 전환 효과 추가 */
 }
 .home-tit h2::after {
   content: ",";
@@ -276,11 +333,11 @@ body.open .header {
 }
 @media (max-width: 767px) {
   .home-tit {
-    padding: 14rem 1.5rem 0;
+    padding: 16rem 1.5rem 0;
   }
   .home-tit h2 {
-    font-size: 48px;
-    line-height: 1.8;
+    font-size: 46px;
+    line-height: 1.4;
   }
 }
 .home-deco-img {
@@ -296,71 +353,6 @@ body.open .header {
   top: 5%;
   left: 45%;
   width: 160px;
-}
-.home-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  border-radius: 8px;
-  width: 60px;
-  height: 60px;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
-  position: absolute;
-  z-index: 1;
-}
-.home-icon.rainbow {
-  top: 16%;
-  left: 44%;
-  background: url("../img/main/emoji_rainbow.png") no-repeat center #fff;
-  background-size: 46px;
-}
-.home-icon.rainbow:hover {
-  background: url("../img/main/emoji_rainbow_hover.gif") no-repeat 10px 8px #fff;
-  background-size: 46px;
-}
-.home-icon.heart {
-  left: 30%;
-  top: 50%;
-  background: url("../img/main/emoji_heart.png") no-repeat center #fff;
-  background-size: 50px;
-}
-.home-icon.heart:hover {
-  background: url("../img/main/emoji_heart_hover.gif") no-repeat center #fff;
-  background-size: 50px;
-}
-.home-icon.greet {
-  bottom: 25%;
-  left: 58%;
-  background: url("../img/main/emoji_greet.png") no-repeat center #fff;
-  background-size: 42px;
-}
-.home-icon.greet:hover {
-  background: url("../img/main/emoji_greet_hover.gif") no-repeat center #fff;
-  background-size: 42px;
-}
-@media (max-width: 767px) {
-  .home-icon {
-    width: 50px;
-    height: 50px;
-  }
-  .home-icon.rainbow {
-    background: url("../img/main/emoji_rainbow_hover.gif") no-repeat 10px 8px #fff;
-    background-size: 36px;
-    top: 35%;
-    left: 53%;
-  }
-  .home-icon.rainbow:hover {
-    background-size: 36px;
-  }
-  .home-icon.heart {
-    background: url("../img/main/emoji_heart_hover.gif") no-repeat center #fff;
-    background-size: 36px;
-    left: 60%;
-  }
-  .home-icon.heart:hover {
-    background-size: 36px;
-  }
 }
 
 .about {
@@ -475,9 +467,12 @@ body.open .header {
     width: 100%;
   }
   .about-desc-tit {
-    font-size: 2rem;
+    font-size: 28px;
     margin-bottom: 0;
     margin-top: 1rem;
+  }
+  .about-desc-tit .underline::after {
+    height: 4px;
   }
   .about-desc-sub p {
     font-size: 16px;
@@ -713,6 +708,9 @@ body.open .header {
     flex-direction: column;
     gap: 20px;
   }
+  .disign-list-wrap {
+    margin-top: 2rem;
+  }
   .disign-tit {
     font-size: 18px;
   }
@@ -732,7 +730,7 @@ body.open .header {
   .disign-item-box {
     grid-template-columns: repeat(12, minmax(0, 1fr));
     grid-template-rows: auto auto 20px;
-    padding: 1.3rem 1rem 0.5rem;
+    padding: 1.3rem 0.5rem 0.5rem;
     margin-bottom: -16px;
   }
   .disign-item-box .arrow {
@@ -809,7 +807,8 @@ body.open .header {
     padding: 5rem 1.5rem 3rem;
   }
   .contact-tit h2 {
-    font-size: 46px;
+    font-size: 40px;
+    line-height: 1.2;
   }
   .contact-tit p {
     font-size: 16px;
@@ -824,13 +823,16 @@ body.open .header {
     margin-top: 0;
     margin-bottom: 0.4rem;
   }
+  .contact-info .copylight {
+    font-size: 12px;
+  }
   .contact-img {
     left: unset;
-    right: 50px;
+    right: 5%;
     top: 100px;
   }
   .contact-img img {
-    width: 100px;
+    width: 70px;
   }
 }
 

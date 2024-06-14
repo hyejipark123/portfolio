@@ -133,9 +133,70 @@ body {
     min-height: 100vh;
     background: url('../img/main/main-bg.png')no-repeat center;
     position: relative;
+    &-icon {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 60px;
+        height: 60px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        &.rainbow {
+            background: url('../img/main/emoji_rainbow.png') no-repeat center #fff;
+            background-size: 46px;
+            transition: transform 0.1s ease-out;
+            top: -10px;
+            right: 0;
+            &:hover{
+                background: url('../img/main/emoji_rainbow_hover.gif') no-repeat 10px 8px #fff;
+                background-size: 46px;
+            }
+        }
+        &.heart{
+            background: url('../img/main/emoji_heart.png') no-repeat center #fff;
+            background-size: 50px;
+            top: 0;
+            left: 50%;
+            &:hover{
+                background: url('../img/main/emoji_heart_hover.gif') no-repeat center #fff;
+                background-size: 50px;
+            }
+        }
+        &.greet {
+            background: url('../img/main/emoji_greet.png') no-repeat center #fff;
+            background-size: 42px;
+            right: -50px;
+            top: -10px;
+            &:hover{
+                background: url('../img/main/emoji_greet_hover.gif') no-repeat center #fff;
+                background-size: 42px;
+            }
+        }
+        @include mobile {
+            width: 40px;
+            height: 40px;
+            &.rainbow {
+                background: url('../img/main/emoji_rainbow_hover.gif') no-repeat 10px 8px #fff;
+                background-size: 26px;
+            }
+            &.heart {
+                background: url('../img/main/emoji_heart_hover.gif') no-repeat center #fff;
+                background-size: 26px;
+                top: -12px;
+                left: 46%;
+            }
+            &.greet {
+                background: url('../img/main/emoji_greet_hover.gif') no-repeat center #fff;
+                background-size: 26px;
+                right: 0;
+            }
+        }
+    }
     &-tit {
         padding: 8rem 10rem 0;
         h2 {
+            width: max-content;
             font-size: 100px;
             font-family: $en-tit-font;
             letter-spacing: -0.05rem;
@@ -143,14 +204,7 @@ body {
             color: $white;
             position: relative;
             z-index: 1;
-            img {
-                vertical-align: sub;
-                margin: 0 -8px 0 -3px;
-                &.rotate-on-mouse {
-                    position: relative;
-                    transition: transform 0.1s ease-out; /* 부드러운 움직임을 위해 전환 효과 추가 */
-                }
-            }
+            position: relative;
             &::after {
                 content: ",";
                 font-family: $en-font;
@@ -160,10 +214,10 @@ body {
             }
         }
         @include mobile { 
-            padding: 14rem 1.5rem 0;
+            padding: 16rem 1.5rem 0;
             h2 {
-                font-size: 48px;
-                line-height: 1.8;
+                font-size: 46px;
+                line-height: 1.4;
             }
         }
       
@@ -181,69 +235,6 @@ body {
                 top: 5%;
                 left: 45%;
                 width: 160px;
-            }
-        }
-    }
-    &-icon {
-        @include flexBox(center);
-        justify-content: center;
-        background-color: $white;
-        border-radius: 8px;
-        width: 60px;
-        height: 60px;
-        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
-        position: absolute;
-        z-index: 1;
-        &.rainbow {
-            top: 16%;
-            left: 44%;
-            background: url('../img/main/emoji_rainbow.png') no-repeat center #fff;
-            background-size: 46px;
-            &:hover{
-                background: url('../img/main/emoji_rainbow_hover.gif') no-repeat 10px 8px #fff;
-                background-size: 46px;
-            }
-        }
-        &.heart {
-            left: 30%;
-            top: 50%;
-            background: url('../img/main/emoji_heart.png') no-repeat center #fff;
-            background-size: 50px;
-            &:hover{
-                background: url('../img/main/emoji_heart_hover.gif') no-repeat center #fff;
-                background-size: 50px;
-            }
-        }
-        &.greet {
-            bottom: 25%;
-            left: 58%;
-            background: url('../img/main/emoji_greet.png') no-repeat center #fff;
-            background-size: 42px;
-            &:hover{
-                background: url('../img/main/emoji_greet_hover.gif') no-repeat center #fff;
-                background-size: 42px;
-            }
-        }
-        @include mobile {
-            width: 50px;
-            height: 50px;
-           
-            &.rainbow {       
-                background: url('../img/main/emoji_rainbow_hover.gif') no-repeat 10px 8px #fff;
-                background-size: 36px;
-                top: 35%;
-                left: 53%;
-                &:hover {
-                    background-size: 36px;
-                }
-            }
-            &.heart {
-                background: url('../img/main/emoji_heart_hover.gif') no-repeat center #fff;
-                background-size: 36px;
-                left: 60%;
-                &:hover {
-                    background-size: 36px;
-                }
             }
         }
     }
@@ -360,9 +351,12 @@ body {
        }
        &-desc {
         &-tit {
-            font-size: 2rem;
+            font-size: 28px;
             margin-bottom: 0;
             margin-top: 1rem;
+            .underline::after {
+                height: 4px;
+            }
         }
         &-sub {
             p {
@@ -598,6 +592,9 @@ body {
             flex-direction: column;
             gap: 20px;
         }
+        &-list-wrap {
+            margin-top: $spacing-sm;
+        }
         &-tit {
             font-size: 18px;
             span {
@@ -624,7 +621,7 @@ body {
                 }
                 grid-template-columns: repeat(12, minmax(0, 1fr));
                 grid-template-rows: auto auto 20px;
-                padding: 1.3rem $spacing-xs 0.5rem;
+                padding: 1.3rem 0.5rem 0.5rem;
                 margin-bottom: -16px;
             }
         }
@@ -695,7 +692,8 @@ body {
         padding: 5rem 1.5rem 3rem;
         &-tit {
             h2 {
-                font-size: 46px;
+                font-size: 40px;
+                line-height: 1.2;
             }
             p {
                 font-size: 16px;
@@ -710,13 +708,16 @@ body {
                 margin-top: 0;
                 margin-bottom: 0.4rem;
             }
+            .copylight {
+                font-size: 12px;
+            }
         }
         &-img {
             left: unset;
-            right: 50px;
+            right: 5%;
             top: 100px;
             img {
-                width: 100px;
+                width: 70px;
             }
         }
     }
