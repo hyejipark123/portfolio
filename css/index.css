@@ -97,7 +97,7 @@ button {
 }
 @media (max-width: 767px) {
   .dot {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -296,19 +296,20 @@ body.open .header {
   .home-icon.rainbow {
     background: url("../img/main/emoji_rainbow_hover.gif") no-repeat 10px 8px #fff;
     background-size: 26px;
-    top: 0;
-    right: 5px;
+    top: -14px;
+    right: -10px;
   }
   .home-icon.heart {
     background: url("../img/main/emoji_heart_hover.gif") no-repeat center #fff;
     background-size: 26px;
-    top: 0px;
-    left: 20%;
+    top: -10px;
+    left: 44%;
   }
   .home-icon.greet {
     background: url("../img/main/emoji_greet_hover.gif") no-repeat center #fff;
     background-size: 26px;
     right: 0;
+    top: -16px;
   }
 }
 .home-tit {
@@ -474,7 +475,7 @@ body.open .header {
     margin-top: 1rem;
   }
   .about-desc-tit .underline::after {
-    height: 4px;
+    height: 2px;
   }
   .about-desc-sub p {
     font-size: 16px;
@@ -876,6 +877,11 @@ body.open .header {
   border-bottom: 1px solid #d9d9d9;
   transform: translateX(-50%);
 }
+@media (max-width: 767px) {
+  .modal-container {
+    margin-top: 4rem;
+  }
+}
 
 .view {
   max-width: 1172px;
@@ -911,6 +917,26 @@ body.open .header {
   color: #bbb;
   font-size: 18px;
   font-family: "Lato", sans-serif;
+}
+@media (max-width: 767px) {
+  .view-tit {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    top: -1px;
+  }
+  .view-tit-sub {
+    font-size: 14px;
+    margin-left: 1rem;
+  }
+  .view-tit-left h2 {
+    font-size: 26px;
+  }
+  .view-tit-right p {
+    margin-left: 0;
+    margin-top: 6px;
+    font-size: 16px;
+  }
 }
 .view-info {
   margin: 3.5rem 0;
@@ -1031,6 +1057,32 @@ body.open .header {
 .view.card .view-tit-right span {
   color: #ef5fa4;
 }
+@media (max-width: 767px) {
+  .view {
+    max-width: -moz-max-content;
+    max-width: max-content;
+    margin: 2rem auto 6rem;
+  }
+  .view-info {
+    margin: 2rem 1rem;
+  }
+  .view-info-sub {
+    font-size: 16px;
+  }
+  .view-info-more p {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .view-info-more .more-arrow {
+    margin-left: 4px;
+    background-size: 20px;
+    width: 22px;
+    height: 22px;
+  }
+  .view-content {
+    padding: 0 1rem;
+  }
+}
 
 .close {
   cursor: pointer;
@@ -1051,4 +1103,15 @@ body.open .header {
 }
 .close:hover {
   background-color: rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 767px) {
+  .close {
+    top: 15px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+  }
+  .close img {
+    width: 20px;
+  }
 }

@@ -82,7 +82,7 @@ button {
         height: 50px; 
     }
     @include mobile { 
-        display: none;
+        display: none !important;
     }
 }
 
