@@ -689,6 +689,7 @@ body.open .header {
   width: 30px;
   height: 30px;
   background-size: 20px;
+  order: 3;
 }
 .disign-item .img-wrap {
   position: absolute;
@@ -721,23 +722,24 @@ body.open .header {
   .disign-tit-sub {
     font-size: 16px;
   }
+  .disign-item-name {
+    grid-column: span 10/span 10;
+  }
+  .disign-item-sub {
+    grid-column: 1/-1;
+    margin-top: 10px;
+  }
   .disign-item-box {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
     grid-template-rows: auto auto 20px;
     padding: 1.3rem 1rem 0.5rem;
     margin-bottom: -16px;
   }
-  .disign-item-box span {
-    grid-column: 1/-1;
-  }
-  .disign-item-box span:last-of-type {
-    margin-top: 1rem;
-  }
   .disign-item-box .arrow {
-    grid-column: 2/3;
-    grid-row: 1/span 2;
+    grid-column: span 2/span 2;
     justify-self: end;
     align-self: start;
+    order: unset;
   }
   .disign .img-wrap {
     display: none;
@@ -801,6 +803,35 @@ body.open .header {
   animation: rotate_image 10s linear infinite;
   transform-origin: 50% 50%;
   width: 160px;
+}
+@media (max-width: 767px) {
+  .contact {
+    padding: 5rem 1.5rem 3rem;
+  }
+  .contact-tit h2 {
+    font-size: 46px;
+  }
+  .contact-tit p {
+    font-size: 16px;
+    margin-bottom: 1rem;
+  }
+  .contact-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .contact-info-list {
+    margin-top: 0;
+    margin-bottom: 0.4rem;
+  }
+  .contact-img {
+    left: unset;
+    right: 50px;
+    top: 100px;
+  }
+  .contact-img img {
+    width: 100px;
+  }
 }
 
 @keyframes rotate_image {
