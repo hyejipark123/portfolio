@@ -179,19 +179,20 @@ body {
             &.rainbow {
                 background: url('../img/main/emoji_rainbow_hover.gif') no-repeat 10px 8px #fff;
                 background-size: 26px;
-                top: 0;
-                right: 5px;
+                top: -14px;
+                right: -10px;
             }
             &.heart {
                 background: url('../img/main/emoji_heart_hover.gif') no-repeat center #fff;
                 background-size: 26px;
-                top: 0px;
-                left: 20%;
+                top: -10px;
+                left: 44%;
             }
             &.greet {
                 background: url('../img/main/emoji_greet_hover.gif') no-repeat center #fff;
                 background-size: 26px;
                 right: 0;
+                top: -16px;
             }
         }
     }
@@ -357,7 +358,7 @@ body {
             margin-bottom: 0;
             margin-top: 1rem;
             .underline::after {
-                height: 4px;
+                height: 2px;
             }
         }
         &-sub {
@@ -769,6 +770,9 @@ body {
                 
             }
         }
+        @include mobile {
+            margin-top: 4rem;
+        }
     }
 }
 .view {
@@ -803,6 +807,28 @@ body {
             color: $gray;
             font-size: $font-size_sm;
             font-family: $en-font;
+        }
+        @include mobile {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: $spacing-xs;
+            top: -1px;
+            &-sub {
+                font-size: 14px;
+                margin-left: $spacing-xs;
+            }
+            &-left {
+                h2 {
+                    font-size: 26px;
+                }
+            }
+            &-right {
+                p {
+                    margin-left: 0;
+                    margin-top: 6px;
+                    font-size: 16px;
+                }
+            }
         }
     }
     &-info {
@@ -955,6 +981,31 @@ body {
             color: #ef5fa4;
         }
     }
+    @include mobile {
+        max-width: max-content;
+        margin: 2rem auto 6rem;
+        &-info {
+            margin: $spacing-sm $spacing-xs;
+            &-sub {
+                font-size: 16px;
+            }
+            &-more {
+                p {
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+                .more-arrow {
+                    margin-left: 4px;
+                    background-size: 20px;
+                    width: 22px;
+                    height: 22px;
+                }
+            }
+        }
+        &-content {
+            padding: 0 $spacing-xs;
+        }
+    }
 }
 
 .close {
@@ -975,5 +1026,14 @@ body {
     }
     &:hover {
         background-color: rgba(0, 0, 0, 0.2);
+    }
+    @include mobile {
+        top: 15px;
+        right: 8px;
+        width: 30px;
+        height: 30px;
+        img {
+            width: 20px;
+        }
     }
 }
