@@ -578,6 +578,7 @@ body {
                 width: 30px;
                 height: 30px;
                 background-size: 20px;
+                order: 3; 
             }
         }
         .img-wrap {
@@ -607,20 +608,21 @@ body {
             }
         }
         &-item {
+            &-name {
+                grid-column: span 10 / span 10;
+            }
+            &-sub {
+                grid-column: 1 / -1;
+                margin-top: 10px;
+            }
             &-box {
-                span {
-                    grid-column: 1 / -1;
-                    &:last-of-type {
-                        margin-top: $spacing-xs;
-                    }
-                }
                 .arrow {
-                    grid-column: 2 / 3;
-                    grid-row: 1 / span 2; 
+                    grid-column: span 2 / span 2;
                     justify-self: end; 
                     align-self: start;
+                    order: unset; 
                 }
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(12, minmax(0, 1fr));
                 grid-template-rows: auto auto 20px;
                 padding: 1.3rem $spacing-xs 0.5rem;
                 margin-bottom: -16px;
@@ -687,6 +689,35 @@ body {
             animation: rotate_image 10s linear infinite;
             transform-origin: 50% 50%;
             width: 160px;
+        }
+    }
+    @include mobile {
+        padding: 5rem 1.5rem 3rem;
+        &-tit {
+            h2 {
+                font-size: 46px;
+            }
+            p {
+                font-size: 16px;
+                margin-bottom: $spacing-xs;
+            }
+        }
+        &-info {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2rem;
+            &-list {
+                margin-top: 0;
+                margin-bottom: 0.4rem;
+            }
+        }
+        &-img {
+            left: unset;
+            right: 50px;
+            top: 100px;
+            img {
+                width: 100px;
+            }
         }
     }
 }
