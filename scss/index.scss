@@ -179,12 +179,14 @@ body {
             &.rainbow {
                 background: url('../img/main/emoji_rainbow_hover.gif') no-repeat 10px 8px #fff;
                 background-size: 26px;
+                top: 0;
+                right: 5px;
             }
             &.heart {
                 background: url('../img/main/emoji_heart_hover.gif') no-repeat center #fff;
                 background-size: 26px;
-                top: -12px;
-                left: 46%;
+                top: 0px;
+                left: 20%;
             }
             &.greet {
                 background: url('../img/main/emoji_greet_hover.gif') no-repeat center #fff;
@@ -216,7 +218,7 @@ body {
         @include mobile { 
             padding: 16rem 1.5rem 0;
             h2 {
-                font-size: 46px;
+                font-size: 44px;
                 line-height: 1.4;
             }
         }

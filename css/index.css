@@ -296,12 +296,14 @@ body.open .header {
   .home-icon.rainbow {
     background: url("../img/main/emoji_rainbow_hover.gif") no-repeat 10px 8px #fff;
     background-size: 26px;
+    top: 0;
+    right: 5px;
   }
   .home-icon.heart {
     background: url("../img/main/emoji_heart_hover.gif") no-repeat center #fff;
     background-size: 26px;
-    top: -12px;
-    left: 46%;
+    top: 0px;
+    left: 20%;
   }
   .home-icon.greet {
     background: url("../img/main/emoji_greet_hover.gif") no-repeat center #fff;
@@ -336,7 +338,7 @@ body.open .header {
     padding: 16rem 1.5rem 0;
   }
   .home-tit h2 {
-    font-size: 46px;
+    font-size: 44px;
     line-height: 1.4;
   }
 }
