@@ -133,6 +133,8 @@ body {
     min-height: 100vh;
     background: url('../img/main/main-bg.png')no-repeat center;
     position: relative;
+    display: flex;
+    align-items: center;
     &-icon {
         position: absolute;
         content: '';
@@ -197,7 +199,7 @@ body {
         }
     }
     &-tit {
-        padding: 8rem 10rem 0;
+        padding:0 10rem;
         h2 {
             width: max-content;
             font-size: 100px;
@@ -745,7 +747,7 @@ body {
     background-color: rgba(0,0,0,0.6); 
     &-container {
         background-color: #fefefe;
-        margin-top: 6rem;
+        margin-top: 4rem;
         border: 1px solid #888;
         border-radius: 12px 12px 0 0;
         width: 100%;
@@ -1011,8 +1013,8 @@ body {
 .close {
     cursor: pointer;
     position: absolute;
-    right: 30px;
-    top: 26px;
+    right: 20px;
+    top: 8px;
     background-color: transparent;
     width: 50px;
     height: 50px;
@@ -1022,7 +1024,7 @@ body {
     justify-content: center;
     transition: all .3s;
     img {
-     width: 30px;  
+     width: 24px;  
     }
     &:hover {
         background-color: rgba(0, 0, 0, 0.2);
