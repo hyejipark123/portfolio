@@ -246,6 +246,8 @@ body.open .header {
   min-height: 100vh;
   background: url("../img/main/main-bg.png") no-repeat center;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 .home-icon {
   position: absolute;
@@ -313,7 +315,7 @@ body.open .header {
   }
 }
 .home-tit {
-  padding: 8rem 10rem 0;
+  padding: 0 10rem;
 }
 .home-tit h2 {
   width: -moz-max-content;
@@ -856,7 +858,7 @@ body.open .header {
 }
 .modal-container {
   background-color: #fefefe;
-  margin-top: 6rem;
+  margin-top: 4rem;
   border: 1px solid #888;
   border-radius: 12px 12px 0 0;
   width: 100%;
@@ -1087,8 +1089,8 @@ body.open .header {
 .close {
   cursor: pointer;
   position: absolute;
-  right: 30px;
-  top: 26px;
+  right: 20px;
+  top: 8px;
   background-color: transparent;
   width: 50px;
   height: 50px;
@@ -1099,7 +1101,7 @@ body.open .header {
   transition: all 0.3s;
 }
 .close img {
-  width: 30px;
+  width: 24px;
 }
 .close:hover {
   background-color: rgba(0, 0, 0, 0.2);
