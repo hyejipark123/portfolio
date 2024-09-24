@@ -245,6 +245,7 @@ body.open .header {
   width: 100%;
   min-height: 100vh;
   background: url("../img/main/main-bg.png") no-repeat center;
+  background-size: cover;
   position: relative;
   display: flex;
   align-items: center;
